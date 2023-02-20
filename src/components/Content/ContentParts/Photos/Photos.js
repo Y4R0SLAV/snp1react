@@ -41,12 +41,14 @@ import photo12_1030 from "../../../../assets/photos/1140/travelphoto/tp12.png"
 
 import photo13 from "../../../../assets/photos/travelphoto13.jpg"
 
+import { BlockTitle, BlockSubtitle } from './../../../commons/texts'
+
 const PhotoRow = ({ rowId, photos }) => {
-  return <div class={"photos__row row" + rowId}>
+  return <div className={"photos__row row" + rowId}>
     {photos.map(photo => {
-      return <picture class={"photo__item photo" + photo.id}>
-        {photo.url480 && <source media="(max-width: 480px)" srcset={photo.url480} />}
-        {photo.url1030 && <source media="(max-width: 1030px)" srcset={photo.url1030} />}
+      return <picture key={photo.id} className={"photo__item photo" + photo.id}>
+        {photo.url480 && <source media="(max-width: 480px)" srcSet={photo.url480} />}
+        {photo.url1030 && <source media="(max-width: 1030px)" srcSet={photo.url1030} />}
         <img src={photo.url} alt="" />
       </picture>
     })}
@@ -69,12 +71,12 @@ export const Photos = () => {
   { id: 13, url: photo13 },
   ]
 
-  return <div class="photos">
-    <div class="photos__content">
-      <div class="photos__title _title  _h2">Фотографии путешествий</div>
-      <div class="photos__subtitle _p-normal  _subtitle"> Идейные соображения высшего порядка, а также рамки и место обучения кадров </div>
+  return <div className="photos">
+    <div className="photos__content">
+      <BlockTitle cn="photos__title" title="Фотографии путешествий" />
+      <BlockSubtitle cn="photos__subtitle" title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
 
-      <div class="photos__items">
+      <div className="photos__items">
         <PhotoRow rowId={1} photos={photos.slice(0, 4)} />
         <PhotoRow rowId={2} photos={photos.slice(4, 9)} />
         <PhotoRow rowId={3} photos={photos.slice(9, 12)} />

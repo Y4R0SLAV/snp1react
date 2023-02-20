@@ -1,5 +1,6 @@
 import "./choose.css"
 import { ChooseItem } from "./ChooseItem"
+import { BlockH2 } from './../../../commons/texts';
 
 export const Choose = () => {
   const buttons = [{ title: "Популярные", active: true },
@@ -18,9 +19,8 @@ export const Choose = () => {
   return <div className="choose">
     <div className="choose__container _container">
       <div className="choose_content">
-        <div className="choose__title _title _h2">
-          Выбери свой тур
-        </div>
+
+        <BlockH2 cn="choose__title" title="Выбери свой тур" />
 
         <div className="choose__list list-choose">
           {buttons.map((item, index) => {

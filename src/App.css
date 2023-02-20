@@ -13,74 +13,6 @@
   padding: 0 15px;
 }
 
-._h1 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 109%;
-  letter-spacing: 0.02em;
-  color: #1B1F2B;
-}
-
-._h2 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 59px;
-  line-height: 124%;
-  color: #1B1F2B;
-}
-
-._h3 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 122%;
-  color: #1B1F2B;
-}
-
-._p-big {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 122%;
-  color: #1B1F2B;
-}
-
-._p-normal {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 142%;
-  color: #1B1F2B;
-}
-
-._p-small {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 142%;
-  letter-spacing: -0.01em;
-  color: #1B1F2B;
-}
-
-._title {
-  max-width: 730px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-._subtitle {
-  margin: 30px auto 100px;
-  color: #A6A6A6;
-  max-width: 420px;
-  text-align: center;
-}
 
 .reviews, .choose, .pack, .stories, .join {
   padding-top: 135px;
@@ -255,4 +187,74 @@
     padding-top: 68px;
     padding-bottom: 75px;
   }
+}
+
+
+._h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 109%;
+  letter-spacing: 0.02em;
+  color: #1B1F2B;
+}
+
+._h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+  color: #1B1F2B;
+}
+
+._h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 122%;
+  color: #1B1F2B;
+}
+
+._p-big {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 122%;
+  color: #1B1F2B;
+}
+
+._p-normal {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #1B1F2B;
+}
+
+._p-small {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  color: #1B1F2B;
+}
+
+._title {
+  max-width: 730px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+._subtitle {
+  margin: 30px auto 100px;
+  color: #A6A6A6;
+  max-width: 420px;
+  text-align: center;
 }

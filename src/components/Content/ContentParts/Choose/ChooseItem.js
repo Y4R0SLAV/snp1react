@@ -1,16 +1,15 @@
+import { BlockH3, BlockPSmall, BlockPBig } from './../../../commons/texts';
+
 export const ChooseItem = ({ price, id, title }) => {
+
   return <div className={"choose__item item" + id}>
     <div className="item__info">
-      <div className="item__title _h3">
-        {title}
-      </div>
-      <div className="item__price _p-small">
+      <BlockH3 cn="item__title" title={title} />
+      <BlockPSmall cn="item__price">
         {price}
-      </div>
+      </BlockPSmall>
     </div>
 
-    <div className="item__details _p-big">
-      Подробнее
-    </div>
+    <BlockPBig cn="item__details" title="Подробнее" />
   </div>
 }

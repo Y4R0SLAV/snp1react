@@ -1,22 +1,23 @@
 import "./stories.css"
+import { BlockTitle, BlockSubtitle, BlockH3, BlockPNormal, BlockPBig } from './../../../commons/texts';
 
 const StoriesItem = ({ id, title, links, children }) => {
   return <div className={"stories__item story" + id}>
     <div className="item__info">
-      <div className="item__title _h3">
-        {title}
-      </div>
-      <div className="item__price _p-normal">
+
+      <BlockH3 cn="item__title" title={title} />
+
+      <BlockPNormal cn="item__price" >
         {children}
-      </div>
+      </BlockPNormal>
     </div>
 
     <div className="item__detNlinks">
-      <div className="item__details _p-big">
+      <BlockPBig cn="item__details">
         Подробнее
-      </div>
+      </BlockPBig>
       <div className="item__links">
-        {links.map(link => <div key={link} className="item__link _p-normal">{link}</div>)}
+        {links.map(link => <BlockPNormal key={link} cn="item__link">{link}</BlockPNormal>)}
       </div>
     </div>
 
@@ -27,16 +28,10 @@ export const Stories = () => {
   return <div className="stories">
     <div className="stories__container _container">
       <div className="stories_content">
-        <div className="_title  _h2">
-          Истории путешествий
-        </div>
-
-        <div className="stories__subtitle _p-normal  _subtitle">
-          Идейные соображения высшего порядка, а также рамки и место обучения кадров
-        </div>
+        <BlockTitle title="Истории путешествий" />
+        <BlockSubtitle title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
 
         <div className="stories__items">
-
           <StoriesItem id={1} title="Автостопом в Стамбул" links={["instagram", "facebook", "YouTube"]}>
             Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
             <br /> <br />

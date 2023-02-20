@@ -1,16 +1,16 @@
 import "./reviews.css"
 import mariaPhoto from "../../../../assets/photos/reviewphoto1.jpg"
 import pavelPhoto from "../../../../assets/photos/reviewphoto2.jpg"
+import { BlockPBig, BlockH3, BlockH2, BlockPSmall, BlockSubtitle } from './../../../commons/texts'
 
 const ReviewItem = ({ text, name, tourName, imgSrc }) => {
   return <div className="reviews__item rewiew">
-    <div className="review__text _p-big">
-      {text}
-    </div>
+    <BlockPBig cn="review__text"> {text} </BlockPBig>
+
     <div className="review__person">
       <div className="review__info">
-        <div className="review__name _h3">{name}</div>
-        <div className="review__to _p-small">Тур: {tourName}</div>
+        <BlockH3 cn="review__name" title={name} />
+        <BlockPSmall cn="review__to">Тур: {tourName}</BlockPSmall>
       </div>
       <div className="review__photo">
         <img src={imgSrc} alt="" />
@@ -28,13 +28,9 @@ export const Reviews = () => {
   return <div className="reviews">
     <div className="reviews__container _container">
       <div className="reviews__content">
-        <div className="reviews__title _title  _h2">
-          Отзывы наших путешественников
-        </div>
+        <BlockH2 cn="reviews__title _title" title="Отзывы наших путешественников" />
 
-        <div className="reviews__subtitle _p-normal _subtitle">
-          Идейные соображения высшего порядка, а также рамки и место обучения кадров
-        </div>
+        <BlockSubtitle cn="reviews__subtitle" title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
 
         <div className="reviews__items">
           {reviews.map(review => <ReviewItem key={review.id} text={review.text} name={review.name} tourName={review.tourName} imgSrc={review.imgSrc} />)}
