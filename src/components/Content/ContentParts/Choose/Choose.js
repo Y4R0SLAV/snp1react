@@ -1,13 +1,21 @@
-import "./choose.css"
+import { useState } from "react"
 import { ChooseItem } from "./ChooseItem"
-import { BlockH2 } from './../../../commons/texts';
+import { BlockH2 } from './../../../commons/texts'
+
+import "./choose.css"
 
 export const Choose = () => {
-  const buttons = [{ title: "Популярные", active: true },
-  { title: "Авторские", active: false },
-  { title: "Походы", active: false },
-  { title: "Сплавы", active: false },
-  { title: "Велопрогулки", active: false },]
+  const [currentButtonId, setCurrentButtonId] = useState(1)
+
+  const chooseButtonHandler = (id) => {
+    setCurrentButtonId(id)
+  }
+
+  const buttons = [{ title: "Популярные", id: 1 },
+  { title: "Авторские", id: 2 },
+  { title: "Походы", id: 3 },
+  { title: "Сплавы", id: 4 },
+  { title: "Велопрогулки", id: 5 },]
 
   const chooseItems = [{ title: "Путешествие в горы", price: "от 80 000 руб", id: 1 },
   { title: "Путешествие в горы", price: "от 80 000 руб", id: 2 },
@@ -23,10 +31,11 @@ export const Choose = () => {
         <BlockH2 cn="choose__title" title="Выбери свой тур" />
 
         <div className="choose__list list-choose">
-          {buttons.map((item, index) => {
+          {buttons.map(item => {
             let cn = "list__item _p-big"
-            if (item.active) { cn += " active" }
-            return <div key={index} className={cn}> {item.title} </div>
+            if (item.id === currentButtonId) { cn += " active" }
+
+            return <div onClick={e => chooseButtonHandler(item.id)} key={item.id} className={cn}> {item.title} </div>
           })
           }
         </div>
