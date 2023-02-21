@@ -35,12 +35,14 @@
   cursor: pointer;
   border-bottom: 1px rgba(0,0,0,0) solid;
   transition: all 300ms ease;
+  text-decoration: none;
 }
 
 .nav__number {
   cursor: pointer;
   border-bottom: 1px rgba(0,0,0,0) solid;
   transition: all 300ms ease;
+  text-decoration: none;
 }
 
 header .nav__number, 

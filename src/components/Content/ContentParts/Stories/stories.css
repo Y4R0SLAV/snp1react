@@ -75,6 +75,8 @@
   transition: all 0.3s ease;
   
   border-bottom: 1px rgba(0,0,0,0) solid;
+  text-decoration: none;
+  color: white;
 }
 
 .item__link:hover {

@@ -1,9 +1,9 @@
 
 
 export const BlockTitle = ({ title = "", cn = "", children }) => {
-  return <div className={"_title  _h2 " + cn}>
+  return <h2 className={"_title  _h2 " + cn}>
     {title || children}
-  </div>
+  </h2>
 }
 
 export const BlockSubtitle = ({ title = "", cn = "", children }) => {
@@ -13,27 +13,27 @@ export const BlockSubtitle = ({ title = "", cn = "", children }) => {
 }
 
 export const BlockH1 = ({ title = "", cn = "", children }) => {
-  return <div className={"_h1 " + cn}>
+  return <h1 className={"_h1 " + cn}>
     {title || children}
-  </div>
+  </h1>
 }
 
 export const BlockH2 = ({ title = "", cn = "", children }) => {
-  return <div className={"_h2 " + cn}>
+  return <h2 className={"_h2 " + cn}>
     {title || children}
-  </div>
+  </h2>
 }
 
 export const BlockH3 = ({ title = "", cn = "", children }) => {
-  return <div className={"_h3 " + cn}>
+  return <h3 className={"_h3 " + cn}>
     {title || children}
-  </div>
+  </h3>
 }
 
 export const BlockPSmall = ({ title = "", cn = "", children }) => {
-  return <div className={"_p-small " + cn}>
+  return <h3 className={"_p-small " + cn}>
     {title || children}
-  </div>
+  </h3>
 }
 
 export const BlockPNormal = ({ title = "", cn = "", children }) => {

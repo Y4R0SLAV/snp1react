@@ -32,6 +32,7 @@
 .join__email {
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
   
   border-bottom: 1px rgba(0,0,0,0) solid;
 }

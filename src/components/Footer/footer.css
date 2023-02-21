@@ -54,6 +54,7 @@ footer {
 
 .footer__link {
   position: relative;
+  text-decoration: none;
   
   cursor: pointer;
   transition: all 0.3s ease;
