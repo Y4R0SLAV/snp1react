@@ -2,7 +2,7 @@ const FormInput = ({ id, title, type, placeholder, isRequired, cn = "", onFocus 
   const plug = (e) => { }
 
   return <div className="form__control">
-    <label htmlFor={id}>{title}</label>
+    <label className="_p-normal" htmlFor={id}>{title}</label>
     <input className={"_p-normal " + cn}
       type={type} id={id} placeholder={placeholder}
       required={isRequired}
@@ -79,7 +79,7 @@ export const PackForm = () => {
         options={[{ value: "Kazakhstan", title: "Казахстан" }, { value: "Costa-Rica", title: "Коста-Рика" }]} />
 
       <FormInput id="email" title="Email" type="email" placeholder="example@mail.com" isRequired={true} cn="" />
-      <FormInput id="number" title="Телефон" type="email" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" isRequired={true} cn="form__number" />
+      <FormInput id="number" title="Телефон" type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" isRequired={true} cn="form__number" />
 
       <FormInput id="date-from" title="Дата от" type="text"
         placeholder="ДД.ММ.ГГГГ" isRequired={true}
