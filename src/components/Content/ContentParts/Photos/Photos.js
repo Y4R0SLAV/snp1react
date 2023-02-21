@@ -79,7 +79,7 @@ export const Photos = () => {
       <div className="photos__items">
         <PhotoRow rowId={1} photos={photos.slice(0, 4)} />
         <PhotoRow rowId={2} photos={photos.slice(4, 9)} />
-        <PhotoRow rowId={3} photos={photos.slice(9, 12)} />
+        <PhotoRow rowId={3} photos={photos.slice(9, 13)} />
       </div>
     </div>
   </div>
