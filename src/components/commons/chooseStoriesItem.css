@@ -1,0 +1,286 @@
+.choose__item {
+  height: 531px;
+  width: 370px;  
+  border-radius: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  
+  cursor: pointer;
+  position: relative;
+}
+
+.stories__item {
+  height: 565px;
+  width: 1170px;
+  border-radius: 50px;
+  padding: 58px 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  
+  cursor: pointer;
+  position: relative;
+}
+
+.stories__item:hover .item__details::before {
+  opacity: 1;
+}
+
+.stories__item .item__price {
+  max-width: 554px;
+}
+
+.stories__item .item__title {
+  padding-bottom: 37px;
+  max-width: none;
+}
+
+.item__detNlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item__links {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  gap: 35px;
+}
+
+.item__link {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  border-bottom: 1px rgba(0,0,0,0) solid;
+  text-decoration: none;
+  color: white;
+}
+
+.item__link:hover {
+  border-bottom: 1px white solid;
+}
+
+.item__link:active {
+  color: #EFA501;
+  border-bottom: 1px #EFA501 solid;
+}
+
+.story1:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/storyphoto1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.story2:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/storyphoto2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.story3:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/storyphoto3.jpg) center no-repeat;
+  background-size: cover;
+  left: 0;
+}
+
+.stories__item:hover:before {
+  transform: scale(1.2);
+}
+
+.item1:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/cardtourphoto1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.item2:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/cardt2.png) center no-repeat;
+  background-size: cover;
+}
+
+.item3:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/cardt3.png) center no-repeat;
+  background-size: cover;
+}
+
+.item4:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/cardtourphoto4.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.item5:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/cardt5.png) center no-repeat;
+  background-size: cover;
+}
+
+.item6:before {
+  background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/cardt6.png) center no-repeat;
+  background-size: cover;
+}
+
+.choose__item:hover:before {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1235px) {
+  .choose__item {
+    height: 531px;
+    width: 450px;
+  }
+
+  .choose__item:before {
+    height: 531px;
+    width: 450px;
+    background-size: cover;
+  }
+
+  .stories__item {
+    width: 918px;
+  } 
+}
+
+@media screen and (max-width: 1140px ){
+  .story1:before {
+    background: 
+      linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+      url(../../assets/photos/1140/stories/si1.png) center no-repeat;
+  }
+
+  .story2:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/1140/stories/si2.png) center no-repeat;
+  }
+
+  .story3:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/1140/stories/si3.png) center no-repeat;
+  }
+}
+
+@media screen and (max-width: 960px ){
+  .choose__item {
+    height: 318px;
+    width: 318px;
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .choose__item:before {
+    height: 318px;
+    width: 318px;
+    background-size: cover;
+  }
+
+  .stories__item {
+    max-height: 455px;
+    max-width: 100%;  
+    border-radius: 20px;
+    padding: 30px 25px 30px 30px;
+  }
+  
+  .item__details::before {
+    width: 150px;
+    top: -9px;
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 680px ){ 
+  .item1:before {
+    background: 
+      linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+      url(../../assets/photos/670/cardtour/ct1.png) center no-repeat;
+  }
+  
+  .item2:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/670/cardtour/ct2.png) center no-repeat;
+  }
+  
+  .item3:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/670/cardtour/ct3.png) center no-repeat;
+  }
+  
+  .item4:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/670/cardtour/ct4.png) center no-repeat;
+  }
+  
+  .item5:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/670/cardtour/ct5.png) center no-repeat;
+  }
+  
+  .item6:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/670/cardtour/ct6.png) center no-repeat;
+  }
+
+  .item__links {
+    display: none;
+  }
+  
+  .stories__item .item__price {
+    max-width: 500px;
+  }
+  
+  .stories__item .item__title {
+    padding-bottom: 20px;
+    max-width: 140px;
+  }
+  
+  .item__detNlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .story1:before {
+    background: 
+      linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+      url(../../assets/photos/670/stories/si1.png) center no-repeat;
+      background-size: cover;
+  }
+
+  .story2:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/670/stories/si2.png) center no-repeat;
+    background-size: cover;
+  }
+
+  .story3:before {
+    background: 
+    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../assets/photos/670/stories/si3.png) center no-repeat;
+    background-size: cover;
+  }
+}
