@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { ChooseStoriesItem, chooseType } from "../../../commons/ChooseStoriesItem"
-import { BlockH2 } from '../../../commons/texts'
+import { BlockH2, BlockPBig } from './../../../commons/texts'
 
 
 import "./choose.css"
@@ -31,15 +31,13 @@ export const Choose = () => {
 
         <BlockH2 cn="choose__title" title="Выбери свой тур" />
 
-        <div className="choose__list list-choose">
+        <BlockPBig cn="choose__list list-choose"> 
           {buttons.map(item => {
-            let cn = "list__item _p-big"
+            let cn = "list__item"
             if (item.id === currentButtonId) { cn += " active" }
-
             return <div onClick={e => chooseButtonHandler(item.id)} key={item.id} className={cn}> {item.title} </div>
-          })
-          }
-        </div>
+          })}
+          </BlockPBig>
 
         <div className="choose__items">
           {chooseItems.map(item => <ChooseStoriesItem type={chooseType} key={item.id} id={item.id} title={item.title}> {item.price} </ChooseStoriesItem>)}

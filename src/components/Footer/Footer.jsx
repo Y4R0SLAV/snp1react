@@ -2,6 +2,7 @@ import "./footer.css"
 import instImg from "../../assets/icons/insta.png"
 import fbImg from "../../assets/icons/fb.png"
 import vkImg from "../../assets/icons/vk.png"
+import { BlockPNormal } from './../commons/texts'
 
 export const Footer = () => {
   const links = [{ id: 1, title: "instagram", imgSrc: instImg, cn: "inst", url: "https://www.instagram.com/placeboworld/" },
@@ -11,12 +12,9 @@ export const Footer = () => {
   return <footer className="footer">
     <div className="footer__container _container">
       <div className="footer__content">
-        <div className="footer__text _p-normal">
-          Наши социальные сети
-        </div>
-        <div className="footer__links _p-normal">
-
-          {links.map(item => {
+        <BlockPNormal cn="footer__text" title="Наши социальные сети"/>
+        <BlockPNormal cn="footer__links" >
+        {links.map(item => {
             return <div key={item.id} className={"footer__item item-" + item.cn}>
               <div className={"footer__icon icon-" + item.cn}>
                 <img src={item.imgSrc} alt="" />
@@ -24,8 +22,7 @@ export const Footer = () => {
               <a className={"footer__link link" + item.id} href={item.url}>{item.title}</a>
             </div>
           })}
-
-        </div>
+        </BlockPNormal>
       </div>
     </div>
   </footer>

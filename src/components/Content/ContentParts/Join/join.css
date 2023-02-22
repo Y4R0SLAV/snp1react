@@ -17,6 +17,7 @@
 .join__info {
   padding-left: 30px;
   max-width: 400px;
+  padding-top: 100px;
 }
 
 .join__title {
@@ -26,13 +27,18 @@
 
 .join .join__subtitle {
   color: #A6A6A6;
-  padding-top: 20px;
+}
+
+.join__subtitle {
+  text-align: left;
+  margin-top: 18px;
 }
 
 .join__email {
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
+  color: #1B1F2B;
   
   border-bottom: 1px rgba(0,0,0,0) solid;
 }

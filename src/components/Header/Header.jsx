@@ -1,6 +1,8 @@
 import './header.css';
-import navLogo from "../../assets/icons/logo.svg";
+import navLogo from "../../assets/icons/logo.svg"
 import { useState } from 'react'
+import { BlockPNormal } from '../commons/texts'
+
 
 export const Header = () => {
   const [headerMoving, setHeaderMoving] = useState(false)
@@ -32,12 +34,10 @@ export const Header = () => {
           </div>
 
           <div className="nav__btns">
-            {buttons.map(item => <a key={item.id} href={item.href} className="nav__btn _p-normal" target="_blank"> {item.title} </a>)}
+            {buttons.map(item => <BlockPNormal key={item.id}> <a href={item.href} className="nav__btn" target="_blank"> {item.title} </a> </BlockPNormal>)}
           </div>
 
-          <a className="nav__number _p-normal" href="tel:+79999999999">
-            +7 999 999 99 99
-          </a>
+          <BlockPNormal> <a className="nav__number" href="tel:+79999999999"> +7 999 999 99 99</a> </BlockPNormal>
         </nav>
       </div>
     </div>

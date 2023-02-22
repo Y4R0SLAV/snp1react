@@ -1,11 +1,12 @@
 import { PropTypes } from 'prop-types'
+import s from "../../../commons/Texts.module.css"
 
 const FormInput = ({ id, title, type, placeholder, isRequired, cn = "", onFocus = null, onBlur = null }) => {
   const plug = (e) => { }
 
   return <div className="form__control">
-    <label className="_p-normal" htmlFor={id}>{title}</label>
-    <input className={"_p-normal " + cn}
+    <label className={s._pNormal} htmlFor={id}>{title}</label>
+    <input className={s._pNormal + " " + cn}
       type={type} id={id} placeholder={placeholder}
       required={isRequired}
       onFocus={onFocus || plug} onBlur={onBlur || plug} />
@@ -25,9 +26,9 @@ FormInput.propTypes = {
 
 const FormSelect = ({ id, title, name, isRequired, defaultValue, options }) => {
   return <div className="form__control direction-form">
-    <label htmlFor={id} className="_p-normal">{title}</label>
+    <label htmlFor={id} className={s._pNormal}>{title}</label> 
     <select
-      className="_p-normal"
+      className={s._pNormal}
       name={name}
       id={id}
       required={isRequired} >
@@ -54,8 +55,8 @@ FormSelect.propTypes = {
 
 const FormTextArea = ({ id, name, title }) => {
   return <div className="form__control comment-block">
-    <label className="_p-normal" htmlFor={id}> {title} </label>
-    <textarea className="_p-normal" name={name} id={id} cols="30" rows="10"></textarea>
+    <label className={s._pNormal} htmlFor={id}> {title} </label>
+    <textarea className={s._pNormal} name={name} id={id} cols="30" rows="10"></textarea>
   </div>
 }
 
@@ -67,15 +68,15 @@ FormTextArea.propTypes = {
 
 const FormRadioTwoVariants = ({ name, title, first, second, isRequired }) => {
   return <div className="form__control radio-block">
-    <label className="_p-normal"> {title} </label>
+    <label className={s._pNormal}> {title} </label>
 
     <div className="form__choices">
-      <label className="_p-normal"> {first} <input type="radio"
+      <label className={s._pNormal}> {first} <input type="radio"
         name={name} required={isRequired} />
         <span className="fakeradio"></span>
       </label>
 
-      <label className="_p-normal"> {second} <input type="radio"
+      <label className={s._pNormal}> {second} <input type="radio"
         name={name} />
         <span className="fakeradio"></span>
       </label>
@@ -95,7 +96,7 @@ const FormAddCheckboxToConditions = ({ name, isRequired, children }) => {
   return <div className="form-control checkbox-block">
     <label> <input type="checkbox" name={name} required={isRequired} /> <span className="fakebox"></span> </label>
 
-    <p className="fakebox__text _p-small">
+    <p className={"fakebox__text " + s._pSmall}>
       {children}
     </p>
   </div>
@@ -111,8 +112,8 @@ FormRadioTwoVariants.propTypes = {
 const FormButtons = () => {
   return <div className="form-control control-buttons">
     <div className="form__buttons">
-      <button type="submit" className="form__button sub-button _p-normal"> Найти тур </button>
-      <button type="reset" className="form__button res-button _p-normal"> Сбросить</button>
+      <button type="submit" className={"form__button sub-button " +  s._pNormal}> Найти тур </button>
+      <button type="reset" className={"form__button res-button " + s._pNormal}> Сбросить</button>
     </div>
   </div>
 }
