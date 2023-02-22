@@ -1,6 +1,6 @@
 import footerPhoto from "../../../../assets/photos/footerphoto.jpg"
 import "./join.css"
-import { BlockH3, BlockSubtitle } from './../../../commons/texts';
+import { BlockH3, BlockSubtitle } from '../../../commons/texts'
 
 export const Join = () => {
   return <div className="join">

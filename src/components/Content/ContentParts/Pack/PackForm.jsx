@@ -1,3 +1,5 @@
+import { PropTypes } from 'prop-types'
+
 const FormInput = ({ id, title, type, placeholder, isRequired, cn = "", onFocus = null, onBlur = null }) => {
   const plug = (e) => { }
 
@@ -10,7 +12,17 @@ const FormInput = ({ id, title, type, placeholder, isRequired, cn = "", onFocus 
   </div>
 }
 
-// options = [{title: string, value: string}, ...]
+FormInput.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(["text", "email", "tel"]).isRequired,
+  placeholder: PropTypes.string.isRequired,
+  isRequired: PropTypes.bool,
+  cn: PropTypes.string,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func,
+}
+
 const FormSelect = ({ id, title, name, isRequired, defaultValue, options }) => {
   return <div className="form__control direction-form">
     <label htmlFor={id} className="_p-normal">{title}</label>
@@ -25,11 +37,32 @@ const FormSelect = ({ id, title, name, isRequired, defaultValue, options }) => {
   </div>
 }
 
+FormSelect.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isRequired: PropTypes.bool,
+  defaultValue: PropTypes.string.isRequired,
+
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      value: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+}
+
 const FormTextArea = ({ id, name, title }) => {
   return <div className="form__control comment-block">
     <label className="_p-normal" htmlFor={id}> {title} </label>
     <textarea className="_p-normal" name={name} id={id} cols="30" rows="10"></textarea>
   </div>
+}
+
+FormTextArea.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 }
 
 const FormRadioTwoVariants = ({ name, title, first, second, isRequired }) => {
@@ -50,6 +83,14 @@ const FormRadioTwoVariants = ({ name, title, first, second, isRequired }) => {
   </div>
 }
 
+FormRadioTwoVariants.propTypes = {
+  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isRequired: PropTypes.bool,
+  first: PropTypes.string.isRequired,
+  second: PropTypes.string.isRequired,
+}
+
 const FormAddCheckboxToConditions = ({ name, isRequired, children }) => {
   return <div className="form-control checkbox-block">
     <label> <input type="checkbox" name={name} required={isRequired} /> <span className="fakebox"></span> </label>
@@ -59,6 +100,13 @@ const FormAddCheckboxToConditions = ({ name, isRequired, children }) => {
     </p>
   </div>
 }
+
+FormRadioTwoVariants.propTypes = {
+  name: PropTypes.string.isRequired,
+  isRequired: PropTypes.bool,
+  children: PropTypes.element
+}
+
 
 const FormButtons = () => {
   return <div className="form-control control-buttons">
@@ -70,7 +118,6 @@ const FormButtons = () => {
 }
 
 export const PackForm = () => {
-  // можно бы вынести в массивы, но неудобно расположены, сначала инпут потом селект потом инпут + так нагляднее))
   return <div className="form">
     <form action="">
       <FormInput id="username" title="Имя" type="text" placeholder="Введите Ваше имя" isRequired={true} cn="" />

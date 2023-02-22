@@ -41,7 +41,8 @@ import photo12_1030 from "../../../../assets/photos/1140/travelphoto/tp12.png"
 
 import photo13 from "../../../../assets/photos/travelphoto13.jpg"
 
-import { BlockTitle, BlockSubtitle } from './../../../commons/texts'
+import { BlockTitle, BlockSubtitle } from '../../../commons/texts'
+import { PropTypes } from 'prop-types'
 
 const PhotoRow = ({ rowId, photos }) => {
   return <div className={"photos__row row" + rowId}>
@@ -53,6 +54,16 @@ const PhotoRow = ({ rowId, photos }) => {
       </picture>
     })}
   </div>
+}
+
+PhotoRow.propsType = {
+  rowId: PropTypes.number.isRequired,
+  photos: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    url: PropTypes.string.isRequired,
+    url480: PropTypes.string,
+    url1030: PropTypes.string,
+  }).isRequired,
 }
 
 export const Photos = () => {

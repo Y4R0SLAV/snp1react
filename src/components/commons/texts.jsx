@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 
 export const BlockTitle = ({ title = "", cn = "", children }) => {
   return <h2 className={"_title  _h2 " + cn}>
@@ -49,3 +49,18 @@ export const BlockPBig = ({ title = "", cn = "", children }) => {
 }
 
 
+BlockTitle.propTypes
+  = BlockSubtitle.propTypes
+  = BlockH1.propTypes
+  = BlockH2.propTypes
+  = BlockH3.propTypes
+  = BlockPSmall.propTypes
+  = BlockPNormal.propTypes
+  = BlockPBig.propTypes = {
+    title: PropTypes.string,
+    cn: PropTypes.string,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node
+    ])
+  }

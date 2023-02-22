@@ -1,6 +1,6 @@
 import "./pack.css"
 import { PackForm } from "./PackForm"
-import { BlockTitle, BlockSubtitle } from './../../../commons/texts';
+import { BlockTitle, BlockSubtitle } from '../../../commons/texts'
 
 export const Pack = () => {
   return <div className="pack">

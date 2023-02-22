@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { ChooseItem } from "./ChooseItem"
-import { BlockH2 } from './../../../commons/texts'
+import { ChooseStoriesItem, chooseType } from "../../../commons/ChooseStoriesItem"
+import { BlockH2 } from '../../../commons/texts'
+
 
 import "./choose.css"
 
@@ -41,7 +42,7 @@ export const Choose = () => {
         </div>
 
         <div className="choose__items">
-          {chooseItems.map(item => <ChooseItem key={item.id} id={item.id} title={item.title} price={item.price} />)}
+          {chooseItems.map(item => <ChooseStoriesItem type={chooseType} key={item.id} id={item.id} title={item.title}> {item.price} </ChooseStoriesItem>)}
         </div>
       </div>
     </div>
