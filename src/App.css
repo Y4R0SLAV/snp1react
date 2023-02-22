@@ -18,7 +18,7 @@
   padding-top: 135px;
 }
 
-/* не футеру паддинг/маргин топ  из-за заднего цвета */
+
 .join {
   padding-bottom: 135px;
 }
@@ -31,224 +31,16 @@
   padding-top: 130px;
 }
 
-/* свойства общие для сторис и чууууз (пусть здесь пока полежат) */
-.stories__item ._h3,
-.stories__item ._p-small,
-.stories__item ._p-big,
-.stories__item ._p-normal,
-.choose__item ._h3,
-.choose__item ._p-small,
-.choose__item ._p-big {
-  color: white;
-}
-
-.stories__item:before,
-.choose__item:before {
-  position: absolute;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  
-  transition: all 300ms ease;
-  top: 0;
-  left: 0;
-}
-
-.item__info {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.item__title {
-  padding-bottom: 16px;
-  max-width: 244px;
-}
-
-.item__details {
-  display: flex;
-  position: relative;
-  z-index: 10;
-}
-
-/* зелный фон сзади */
-.item__details::before {
-  transition: all 3s ease;
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 42px;
-  border-radius: 50px;
-  top: -7px;
-  left: -20px;
-  background: #286562;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 300ms ease;
-}
-
-.choose__item:hover .item__details::before {
-  opacity: 1;
-}
-
-/* белая стрелочка справа */
-.item__details::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 136px;
-  filter: brightness(0) invert(1);
-  width: 22px;
-  height: 15px;
-  background: url(/src/assets/icons/arrow.png);
-}
-
-
-
-
-._h1 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 109%;
-  letter-spacing: 0.02em;
-  color: #1B1F2B;
-}
-
-._h2 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 59px;
-  line-height: 124%;
-  color: #1B1F2B;
-}
-
-._h3 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 122%;
-  color: #1B1F2B;
-}
-
-._p-big {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 122%;
-  color: #1B1F2B;
-}
-
-._p-normal {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 142%;
-  color: #1B1F2B;
-}
-
-._p-small {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 142%;
-  letter-spacing: -0.01em;
-  color: #1B1F2B;
-}
-
-._title {
-  max-width: 730px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-._subtitle {
-  margin: 30px auto 100px;
-  color: #A6A6A6;
-  max-width: 420px;
-  text-align: center;
-}
-
 
 @media screen and (max-width: 1140px ){ 
   ._container {
       margin: 0 39px;
-  }
-
-  .item__title {
-    max-width: 348px;
-  }
-}
-
-@media screen and (max-width: 960px ){
-  ._h1 {
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 112%;
-    letter-spacing: 0.02em;
-  }
-
-  ._h2 {
-    font-size: 34px;
-    line-height: 112%;
-    letter-spacing: 0.02em;
-  }
-
-  ._h3 {
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 120%;
-    letter-spacing: 0.04em;
-  }
-
-  ._p-big {
-    font-size: 16px;
-    line-height: 142%;
-  }
-
-  ._p-normal {
-    font-size: 16px;
-  }
-
-  ._p-small {
-    font-size: 16px;
-  }
-
-  .item__details {
-    position: relative;
-    top: -2px;
-  }
-
-  .item__title {
-    padding-bottom: 13px;
-  }
-
-  .choose__item:hover .item__details::before {
-    opacity: 0;
-    /* на телефонах ведь нельзя похаверить?? */
-  } 
-
-  .item__details::after {
-    top: 4px;
-    left: 100px;
   }
 }
 
 @media screen and (max-width: 680px ){ 
   ._container {
     margin: 0 auto;
-  }
-  
-  ._subtitle {
-    margin: 20px auto 40px;
-    max-width: 320px;
   }
 
   .reviews, .photos, .choose, .pack, .stories, .join {

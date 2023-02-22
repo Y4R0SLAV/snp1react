@@ -1,4 +1,4 @@
-.choose__item {
+.chooseItem {
   height: 531px;
   width: 370px;  
   border-radius: 50px;
@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.stories__item {
+.storiesItem {
   height: 565px;
   width: 1170px;
   border-radius: 50px;
@@ -26,33 +26,95 @@
   position: relative;
 }
 
-.stories__item:hover .item__details::before {
+.storiesItem h3,
+.storiesItem p,
+.storiesItem p,
+.storiesItem p,
+.chooseItem h3,
+.chooseItem p,
+.chooseItem p,
+.itemPrice {
+  color: white;
+}
+
+.storiesItem:before,
+.chooseItem:before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  
+  transition: all 300ms ease;
+  top: 0;
+  left: 0;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.itemTitle {
+  padding-bottom: 16px;
+  max-width: 244px;
+}
+
+.itemDetails {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  color: white
+}
+
+/* зелный фон сзади */
+.itemDetails::before {
+  transition: all 3s ease;
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 42px;
+  border-radius: 50px;
+  top: -7px;
+  left: -20px;
+  background: #286562;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.chooseItem:hover .itemDetails::before {
   opacity: 1;
 }
 
-.stories__item .item__price {
+.storiesItem:hover .itemDetails::before {
+  opacity: 1;
+}
+
+.storiesItem .itemPrice {
   max-width: 554px;
 }
 
-.stories__item .item__title {
+.storiesItem .itemTitle {
   padding-bottom: 37px;
   max-width: none;
 }
 
-.item__detNlinks {
+.itemDetNlinks {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.item__links {
+.itemLinks {
   display: flex;
   position: relative;
   z-index: 10;
   gap: 35px;
 }
 
-.item__link {
+.itemLink {
   cursor: pointer;
   transition: all 0.3s ease;
   
@@ -61,14 +123,27 @@
   color: white;
 }
 
-.item__link:hover {
+.itemLink:hover {
   border-bottom: 1px white solid;
 }
 
-.item__link:active {
+.itemLink:active {
   color: #EFA501;
   border-bottom: 1px #EFA501 solid;
 }
+
+/* белая стрелочка справа */
+.itemDetails::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 136px;
+  filter: brightness(0) invert(1);
+  width: 22px;
+  height: 15px;
+  background: url(/src/assets/icons/arrow.png);
+}
+
 
 .story1:before {
   background: 
@@ -92,7 +167,7 @@
   left: 0;
 }
 
-.stories__item:hover:before {
+.storiesItem:hover:before {
   transform: scale(1.2);
 }
 
@@ -138,28 +213,33 @@
   background-size: cover;
 }
 
-.choose__item:hover:before {
+.chooseItem:hover:before {
   transform: scale(1.2);
 }
 
+
 @media screen and (max-width: 1235px) {
-  .choose__item {
+  .chooseItem {
     height: 531px;
     width: 450px;
   }
 
-  .choose__item:before {
+  .chooseItem:before {
     height: 531px;
     width: 450px;
     background-size: cover;
   }
 
-  .stories__item {
+  .storiesItem {
     width: 918px;
   } 
 }
 
 @media screen and (max-width: 1140px ){
+  .itemTitle {
+    max-width: 348px;
+  }
+
   .story1:before {
     background: 
       linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
@@ -180,27 +260,45 @@
 }
 
 @media screen and (max-width: 960px ){
-  .choose__item {
+  .itemTitle {
+    padding-bottom: 13px;
+  }
+
+  .itemDetails {
+    position: relative;
+    top: -2px;
+  }
+
+  .chooseItem:hover .itemDetails::before {
+    opacity: 0;
+  } 
+
+  .itemDetails::after {
+    top: 4px;
+    left: 100px;
+  }
+
+  .chooseItem {
     height: 318px;
     width: 318px;
     padding: 25px;
     border-radius: 20px;
   }
 
-  .choose__item:before {
+  .chooseItem:before {
     height: 318px;
     width: 318px;
     background-size: cover;
   }
 
-  .stories__item {
+  .storiesItem {
     max-height: 455px;
     max-width: 100%;  
     border-radius: 20px;
     padding: 30px 25px 30px 30px;
   }
   
-  .item__details::before {
+  .itemDetails::before {
     width: 150px;
     top: -9px;
     left: -15px;
@@ -244,20 +342,20 @@
     url(../../assets/photos/670/cardtour/ct6.png) center no-repeat;
   }
 
-  .item__links {
+  .itemLinks {
     display: none;
   }
   
-  .stories__item .item__price {
+  .storiesItem .itemPrice {
     max-width: 500px;
   }
   
-  .stories__item .item__title {
+  .storiesItem .itemTitle {
     padding-bottom: 20px;
     max-width: 140px;
   }
   
-  .item__detNlinks {
+  .itemDetNlinks {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
