@@ -16,8 +16,7 @@ export const Stories = () => {
                   { title: "ВКонтакте", url: "https://youtube.com", id: 8 }]
 
   return <div className="stories">
-    <div className="stories__container _container">
-      <div className="stories_content">
+    <div className="_container">
         <BlockTitle title="Истории путешествий" />
         <BlockSubtitle title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
 
@@ -40,7 +39,6 @@ export const Stories = () => {
             Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
           </ChooseStoriesItem>
 
-        </div>
       </div>
     </div>
   </div>

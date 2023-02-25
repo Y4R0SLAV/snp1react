@@ -2,7 +2,6 @@ import { useState } from "react"
 import { ChooseStoriesItem, chooseType } from "../../../commons/ChooseStoriesItem"
 import { BlockH2, BlockPBig } from './../../../commons/texts'
 
-
 import "./choose.css"
 
 export const Choose = () => {
@@ -26,7 +25,7 @@ export const Choose = () => {
   { title: "Путешествие в горы", price: "от 80 000 руб", id: 6 },]
 
   return <div className="choose">
-    <div className="choose__container _container">
+    <div className="_container">
       <div className="choose_content">
 
         <BlockH2 cn="choose__title" title="Выбери свой тур" />
@@ -40,7 +39,7 @@ export const Choose = () => {
           </BlockPBig>
 
         <div className="choose__items">
-          {chooseItems.map(item => <ChooseStoriesItem type={chooseType} key={item.id} id={item.id} title={item.title}> {item.price} </ChooseStoriesItem>)}
+          {chooseItems.map(item => <ChooseStoriesItem key={item.id} type={chooseType}  id={item.id} title={item.title}> {item.price} </ChooseStoriesItem>)}
         </div>
       </div>
     </div>

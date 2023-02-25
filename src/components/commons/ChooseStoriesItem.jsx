@@ -1,4 +1,4 @@
-import { BlockH3, BlockPSmall, BlockPBig, BlockPNormal } from './texts'
+import { BlockH3, BlockPBig, BlockPNormal } from './texts'
 import { PropTypes } from 'prop-types'
 import s from "./ChooseStoriesItem.module.css"
 
@@ -12,9 +12,7 @@ export const ChooseStoriesItem = ({ id, title, children, links = [], type }) => 
 
   let cn = s.chooseItem + " " + s[a]
 
-  if (type === storiesType) {
-    cn = s.storiesItem + " " +s[b]
-  }
+  if (type === storiesType) { cn = s.storiesItem + " " + s[b] }
 
   return <div className={cn}>
     <div className={s.itemInfo}>

@@ -7,7 +7,6 @@ import { BlockPNormal } from '../commons/texts'
 export const Header = () => {
   const [headerMoving, setHeaderMoving] = useState(false)
 
-  let headerCN = "header"
   let logoCN = "header__logo"
 
   window.addEventListener('scroll', (e) => {
@@ -24,12 +23,11 @@ export const Header = () => {
     { id: 3, title: "Отзывы", href: "#" },
     { id: 4, title: "Истории", href: "#" }]
 
-  return <header className={headerMoving ? headerCN + " header__wrapper-fixed" : headerCN}>
-    <div className="header__wrapper">
-      <div className="header__container _container">
+  return <header className={headerMoving ? "header__wrapper-fixed" : ""}>
+      <div className="_container">
         <nav className="header__nav nav-header">
 
-          <div className={headerMoving ? logoCN + "nav__logo-black" : logoCN}>
+          <div className={headerMoving ? logoCN + " nav__logo-black" : logoCN}>
             <img className="nav__logo-img" src={navLogo} alt="" />
           </div>
 
@@ -39,7 +37,6 @@ export const Header = () => {
 
           <BlockPNormal> <a className="nav__number" href="tel:+79999999999"> +7 999 999 99 99</a> </BlockPNormal>
         </nav>
-      </div>
     </div>
   </header>
 }
