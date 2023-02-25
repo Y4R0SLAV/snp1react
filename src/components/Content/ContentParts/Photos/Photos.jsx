@@ -44,15 +44,24 @@ import photo13 from "../../../../assets/photos/travelphoto13.jpg"
 import { BlockTitle, BlockSubtitle } from '../../../commons/texts'
 import { PropTypes } from 'prop-types'
 
+const PhotoItem = ({id, url, url480, url1030}) => {
+  return <picture key={id} className={"photo__item photo" + id}>
+    {url480 && <source media="(max-width: 480px)" srcSet={url480} />}
+    {url1030 && <source media="(max-width: 1030px)" srcSet={url1030} />}
+    <img src={url} alt="" />
+  </picture>
+}
+
+PhotoItem.propsType = {
+  id: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired,
+  url480: PropTypes.string,
+  url1030: PropTypes.string,
+}
+
 const PhotoRow = ({ rowId, photos }) => {
   return <div className={"photos__row row" + rowId}>
-    {photos.map(photo => {
-      return <picture key={photo.id} className={"photo__item photo" + photo.id}>
-        {photo.url480 && <source media="(max-width: 480px)" srcSet={photo.url480} />}
-        {photo.url1030 && <source media="(max-width: 1030px)" srcSet={photo.url1030} />}
-        <img src={photo.url} alt="" />
-      </picture>
-    })}
+    {photos.map(photo => <PhotoItem key={photo.id} id={photo.id} url={photo.url} url480={photo.url480 || null } url480={photo.url1330 || null }/>)}
   </div>
 }
 
@@ -67,23 +76,22 @@ PhotoRow.propsType = {
 }
 
 export const Photos = () => {
-  const photos = [{ id: 1, url: photo1, url480: photo1_480, url1030: photo1_1030 },
-  { id: 2, url: photo2 },
-  { id: 3, url: photo3, url1030: photo3_1030 },
-  { id: 4, url: photo4, url480: photo4_480, url1030: photo4_1030 },
-  { id: 5, url: photo5 },
-  { id: 6, url: photo6, url1030: photo6_1030 },
-  { id: 7, url: photo7 },
-  { id: 8, url: photo8, url480: photo8_480, url1030: photo8_1030 },
-  { id: 9, url: photo9, url480: photo9_480, url1030: photo9_1030 },
-  { id: 10, url: photo10, url480: photo10_480, url1030: photo10_1030 },
-  { id: 11, url: photo11, url480: photo11_480, url1030: photo11_1030 },
-  { id: 12, url: photo12, url1030: photo12_1030 },
-  { id: 13, url: photo13 },
-  ]
+  const photos = [
+    { id: 1, url: photo1, url480: photo1_480, url1030: photo1_1030 },
+    { id: 2, url: photo2 },
+    { id: 3, url: photo3, url1030: photo3_1030 },
+    { id: 4, url: photo4, url480: photo4_480, url1030: photo4_1030 },
+    { id: 5, url: photo5 },
+    { id: 6, url: photo6, url1030: photo6_1030 },
+    { id: 7, url: photo7 },
+    { id: 8, url: photo8, url480: photo8_480, url1030: photo8_1030 },
+    { id: 9, url: photo9, url480: photo9_480, url1030: photo9_1030 },
+    { id: 10, url: photo10, url480: photo10_480, url1030: photo10_1030 },
+    { id: 11, url: photo11, url480: photo11_480, url1030: photo11_1030 },
+    { id: 12, url: photo12, url1030: photo12_1030 },
+    { id: 13, url: photo13 },]
 
   return <div className="photos">
-    <div className="photos__content">
       <BlockTitle cn="photos__title" title="Фотографии путешествий" />
       <BlockSubtitle cn="photos__subtitle" title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
 
@@ -92,6 +100,5 @@ export const Photos = () => {
         <PhotoRow rowId={2} photos={photos.slice(4, 9)} />
         <PhotoRow rowId={3} photos={photos.slice(9, 13)} />
       </div>
-    </div>
   </div>
 }
