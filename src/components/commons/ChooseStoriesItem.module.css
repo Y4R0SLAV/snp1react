@@ -141,28 +141,28 @@
   filter: brightness(0) invert(1);
   width: 22px;
   height: 15px;
-  background: url(/src/assets/icons/arrow.png);
+  background: url(assets/icons/arrow.png);
 }
 
 
 .story1:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/storyphoto1.jpg) center no-repeat;
+    url(assets/photos/storyphoto1.jpg) center no-repeat;
   background-size: cover;
 }
 
 .story2:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/storyphoto2.jpg) center no-repeat;
+    url(assets/photos/storyphoto2.jpg) center no-repeat;
   background-size: cover;
 }
 
 .story3:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/storyphoto3.jpg) center no-repeat;
+    url(assets/photos/storyphoto3.jpg) center no-repeat;
   background-size: cover;
   left: 0;
 }
@@ -174,42 +174,42 @@
 .item1:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/cardtourphoto1.jpg) center no-repeat;
+    url(assets/photos/cardtourphoto1.jpg) center no-repeat;
   background-size: cover;
 }
 
 .item2:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/cardt2.png) center no-repeat;
+    url(assets/photos/cardt2.png) center no-repeat;
   background-size: cover;
 }
 
 .item3:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/cardt3.png) center no-repeat;
+    url(assets/photos/cardt3.png) center no-repeat;
   background-size: cover;
 }
 
 .item4:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/cardtourphoto4.jpg) center no-repeat;
+    url(assets/photos/cardtourphoto4.jpg) center no-repeat;
   background-size: cover;
 }
 
 .item5:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/cardt5.png) center no-repeat;
+    url(assets/photos/cardt5.png) center no-repeat;
   background-size: cover;
 }
 
 .item6:before {
   background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/cardt6.png) center no-repeat;
+    url(assets/photos/cardt6.png) center no-repeat;
   background-size: cover;
 }
 
@@ -243,19 +243,19 @@
   .story1:before {
     background: 
       linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-      url(../../assets/photos/1140/stories/si1.png) center no-repeat;
+      url(assets/photos/1140/stories/si1.png) center no-repeat;
   }
 
   .story2:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/1140/stories/si2.png) center no-repeat;
+    url(assets/photos/1140/stories/si2.png) center no-repeat;
   }
 
   .story3:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/1140/stories/si3.png) center no-repeat;
+    url(assets/photos/1140/stories/si3.png) center no-repeat;
   }
 }
 
@@ -309,37 +309,37 @@
   .item1:before {
     background: 
       linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-      url(../../assets/photos/670/cardtour/ct1.png) center no-repeat;
+      url(assets/photos/670/cardtour/ct1.png) center no-repeat;
   }
   
   .item2:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/670/cardtour/ct2.png) center no-repeat;
+    url(assets/photos/670/cardtour/ct2.png) center no-repeat;
   }
   
   .item3:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/670/cardtour/ct3.png) center no-repeat;
+    url(assets/photos/670/cardtour/ct3.png) center no-repeat;
   }
   
   .item4:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/670/cardtour/ct4.png) center no-repeat;
+    url(assets/photos/670/cardtour/ct4.png) center no-repeat;
   }
   
   .item5:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/670/cardtour/ct5.png) center no-repeat;
+    url(assets/photos/670/cardtour/ct5.png) center no-repeat;
   }
   
   .item6:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/670/cardtour/ct6.png) center no-repeat;
+    url(assets/photos/670/cardtour/ct6.png) center no-repeat;
   }
 
   .itemLinks {
@@ -364,21 +364,21 @@
   .story1:before {
     background: 
       linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-      url(../../assets/photos/670/stories/si1.png) center no-repeat;
+      url(assets/photos/670/stories/si1.png) center no-repeat;
       background-size: cover;
   }
 
   .story2:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/670/stories/si2.png) center no-repeat;
+    url(assets/photos/670/stories/si2.png) center no-repeat;
     background-size: cover;
   }
 
   .story3:before {
     background: 
     linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(../../assets/photos/670/stories/si3.png) center no-repeat;
+    url(assets/photos/670/stories/si3.png) center no-repeat;
     background-size: cover;
   }
 }
