@@ -1,6 +1,6 @@
 import "./header.css"
 import navLogo from "assets/icons/logo.svg"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { BlockPNormal } from "components/commons/texts"
 
 
@@ -9,13 +9,22 @@ export const Header = () => {
 
   let logoCN = "header__logo"
 
-  window.addEventListener('scroll', (e) => {
-    if (window.scrollY > 450) {
-      setHeaderMoving(true)
-    } else {
-      setHeaderMoving(false)
+  useEffect(() => {
+    const onScroll = (e) => {
+      if (window.scrollY > 450) {
+        setHeaderMoving(true)
+        }  else {
+        setHeaderMoving(false)
+      }}
+      
+    window.addEventListener('scroll', onScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', onScroll);
     }
-  })
+  }, []);
+
+
 
   const buttons = [
     { id: 1, title: "Туры", href: "#" },
