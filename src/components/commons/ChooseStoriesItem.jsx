@@ -7,12 +7,12 @@ export const storiesType = "stories"
 
 // type = chooseType || storiesType
 export const ChooseStoriesItem = ({ id, title, children, links = [], type }) => {
-  let a = "item" + id
-  let b = "story" + id
+  let itemClass = "item" + id
+  let storyClass = "story" + id
 
-  let cn = s.chooseItem + " " + s[a]
+  let cn = s.chooseItem + " " + s[itemClass]
 
-  if (type === storiesType) { cn = s.storiesItem + " " + s[b] }
+  if (type === storiesType) { cn = s.storiesItem + " " + s[storyClass] }
 
   return <div className={cn}>
     <div className={s.itemInfo}>
@@ -30,7 +30,7 @@ export const ChooseStoriesItem = ({ id, title, children, links = [], type }) => 
             {links.map(link => <BlockPNormal key={link.id}><a className={s.itemLink} href={link.url}>{link.title}</a></BlockPNormal>)}
           </div>
         </div>
-        : <BlockPBig cn={s.itemDetails} title="Подробнее" />
+      : <BlockPBig cn={s.itemDetails} title="Подробнее" />
     }
   </div>
 }
@@ -38,11 +38,6 @@ export const ChooseStoriesItem = ({ id, title, children, links = [], type }) => 
 ChooseStoriesItem.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]),
-
   type: PropTypes.oneOf([chooseType, storiesType]).isRequired,
 
   links: PropTypes.arrayOf(
@@ -52,4 +47,9 @@ ChooseStoriesItem.propTypes = {
       id: PropTypes.number.isRequired,
     }).isRequired
   ),
+
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
 }
