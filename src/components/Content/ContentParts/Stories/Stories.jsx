@@ -1,6 +1,6 @@
 import "./stories.css"
-import { BlockTitle, BlockSubtitle } from '../../../commons/texts'
-import { ChooseStoriesItem, storiesType } from "../../../commons/ChooseStoriesItem"
+import { BlockTitle, BlockSubtitle } from "components/commons/texts"
+import { ChooseStoriesItem, storiesType } from "components/commons/ChooseStoriesItem"
 
 
 export const Stories = () => {

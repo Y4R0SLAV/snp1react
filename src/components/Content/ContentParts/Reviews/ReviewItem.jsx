@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import { BlockPBig, BlockH3, BlockPSmall } from '../../../commons/texts'
+import PropTypes from "prop-types"
+import { BlockPBig, BlockH3, BlockPSmall } from "components/commons/texts"
 import s from "./ReviewItem.module.css"
 
 export const ReviewItem = ({ children, name, tourName, imgSrc }) => {

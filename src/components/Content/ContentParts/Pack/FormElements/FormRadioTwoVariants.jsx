@@ -1,5 +1,5 @@
-import { PropTypes } from 'prop-types'
-import commonS from "../../../../commons/Texts.module.css"
+import { PropTypes } from "prop-types"
+import commonS from "components/commons/Texts.module.css"
 
 export const FormRadioTwoVariants = ({ name, title, first, second, isRequired }) => {
   return <div className="form__control radio-block">

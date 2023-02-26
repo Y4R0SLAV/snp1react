@@ -1,7 +1,7 @@
-import './header.css';
-import navLogo from "../../assets/icons/logo.svg"
-import { useState } from 'react'
-import { BlockPNormal } from '../commons/texts'
+import "./header.css"
+import navLogo from "assets/icons/logo.svg"
+import { useState } from "react"
+import { BlockPNormal } from "components/commons/texts"
 
 
 export const Header = () => {

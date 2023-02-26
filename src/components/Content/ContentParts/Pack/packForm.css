@@ -33,6 +33,7 @@ form {
 	grid-row: 6;
 }
 
+/* общее свойство у всех элементов формы */
 .form__control {
   display: flex;
   flex-direction: column;
@@ -88,7 +89,7 @@ textarea {
   height: 20px;
   top: 60px;
   right: 22px;
-  background: url(../../../../assets/icons/mark.png) no-repeat center;
+  background: url(assets/icons/mark.png) no-repeat center;
 }
 
 #direction:hover {
@@ -214,7 +215,7 @@ label input:checked ~ .fakeradio:after {
   
   border-color: #0b76ef;
   background-color: black;
-  background: url(../../../../assets/icons/checkbox.png) center no-repeat;
+  background: url(assets/icons/checkbox.png) center no-repeat;
 }
 
 .checkbox-block input:checked ~ .fakebox:after {
@@ -364,7 +365,7 @@ label input:checked ~ .fakeradio:after {
     
     border-color: #0b76ef;
     background-color: black;
-    background: url(../../../../assets/icons/checkbox.png) center no-repeat;
+    background: url(assets/icons/checkbox.png) center no-repeat;
   }
   
   .form__license {

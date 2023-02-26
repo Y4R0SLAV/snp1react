@@ -1,8 +1,8 @@
 import "./reviews.css"
-import mariaPhoto from "../../../../assets/photos/reviewphoto1.jpg"
-import pavelPhoto from "../../../../assets/photos/reviewphoto2.jpg"
-import { BlockSubtitle, BlockTitle } from '../../../commons/texts'
-import { ReviewItem } from './ReviewItem'
+import mariaPhoto from "assets/photos/reviewphoto1.jpg"
+import pavelPhoto from "assets/photos/reviewphoto2.jpg"
+import { BlockSubtitle, BlockTitle } from "components/commons/texts"
+import { ReviewItem } from "./ReviewItem"
 
 export const Reviews = () => {
   return <div className="reviews">

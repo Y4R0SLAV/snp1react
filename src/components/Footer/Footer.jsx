@@ -1,9 +1,9 @@
 import "./footer.css"
-import instImg from "../../assets/icons/insta.png"
-import fbImg from "../../assets/icons/fb.png"
-import vkImg from "../../assets/icons/vk.png"
-import { BlockPNormal } from './../commons/texts'
-import { FooterLink } from './FooterLink'
+import instImg from "assets/icons/insta.png"
+import fbImg from "assets/icons/fb.png"
+import vkImg from "assets/icons/vk.png"
+import { BlockPNormal } from "components/commons/texts"
+import { FooterLink } from "./FooterLink"
 
 export const Footer = () => {
   const links = [{ id: 1, title: "instagram", imgSrc: instImg, cn: "inst", url: "https://www.instagram.com/placeboworld/" },

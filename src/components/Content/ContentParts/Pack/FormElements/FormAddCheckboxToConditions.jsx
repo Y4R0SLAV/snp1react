@@ -1,5 +1,5 @@
-import { PropTypes } from 'prop-types'
-import commonS from "../../../../commons/Texts.module.css"
+import { PropTypes } from "prop-types"
+import commonS from "components/commons/Texts.module.css"
 
 export const FormAddCheckboxToConditions = ({ name, isRequired, children }) => {
   return <div className="form-control checkbox-block">

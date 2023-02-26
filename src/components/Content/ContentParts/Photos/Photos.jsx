@@ -1,48 +1,48 @@
 import "./photos.css"
 
-import photo1 from "../../../../assets/photos/travelphoto1.jpg"
-import photo1_480 from "../../../../assets/photos/670/travelphoto/tp1.png"
-import photo1_1030 from "../../../../assets/photos/1140/travelphoto/tp1.png"
+import photo1 from "assets/photos/travelphoto1.jpg"
+import photo1_480 from "assets/photos/670/travelphoto/tp1.png"
+import photo1_1030 from "assets/photos/1140/travelphoto/tp1.png"
 
-import photo2 from "../../../../assets/photos/travelphoto2.jpg"
+import photo2 from "assets/photos/travelphoto2.jpg"
 
-import photo3 from "../../../../assets/photos/travelphoto3.jpg"
-import photo3_1030 from "../../../../assets/photos/1140/travelphoto/tp3.png"
+import photo3 from "assets/photos/travelphoto3.jpg"
+import photo3_1030 from "assets/photos/1140/travelphoto/tp3.png"
 
-import photo4 from "../../../../assets/photos/travelphoto4.jpg"
-import photo4_480 from "../../../../assets/photos/670/travelphoto/tp4.png"
-import photo4_1030 from "../../../../assets/photos/1140/travelphoto/tp4.png"
+import photo4 from "assets/photos/travelphoto4.jpg"
+import photo4_480 from "assets/photos/670/travelphoto/tp4.png"
+import photo4_1030 from "assets/photos/1140/travelphoto/tp4.png"
 
-import photo5 from "../../../../assets/photos/travelphoto5.png"
+import photo5 from "assets/photos/travelphoto5.png"
 
-import photo6 from "../../../../assets/photos/travelphoto6.jpg"
-import photo6_1030 from "../../../../assets/photos/1140/travelphoto/tp6.png"
+import photo6 from "assets/photos/travelphoto6.jpg"
+import photo6_1030 from "assets/photos/1140/travelphoto/tp6.png"
 
-import photo7 from "../../../../assets/photos/travelphoto7.jpg"
+import photo7 from "assets/photos/travelphoto7.jpg"
 
-import photo8 from "../../../../assets/photos/travelphoto8.png"
-import photo8_480 from "../../../../assets/photos/670/travelphoto/tp8.png"
-import photo8_1030 from "../../../../assets/photos/1140/travelphoto/tp8.png"
+import photo8 from "assets/photos/travelphoto8.png"
+import photo8_480 from "assets/photos/670/travelphoto/tp8.png"
+import photo8_1030 from "assets/photos/1140/travelphoto/tp8.png"
 
-import photo9 from "../../../../assets/photos/travelphoto9.png"
-import photo9_480 from "../../../../assets/photos/670/travelphoto/tp9.png"
-import photo9_1030 from "../../../../assets/photos/1140/travelphoto/tp9.png"
+import photo9 from "assets/photos/travelphoto9.png"
+import photo9_480 from "assets/photos/670/travelphoto/tp9.png"
+import photo9_1030 from "assets/photos/1140/travelphoto/tp9.png"
 
-import photo10 from "../../../../assets/photos/travelphoto10.jpg"
-import photo10_480 from "../../../../assets/photos/670/travelphoto/tp10.png"
-import photo10_1030 from "../../../../assets/photos/1140/travelphoto/tp10.png"
+import photo10 from "assets/photos/travelphoto10.jpg"
+import photo10_480 from "assets/photos/670/travelphoto/tp10.png"
+import photo10_1030 from "assets/photos/1140/travelphoto/tp10.png"
 
-import photo11 from "../../../../assets/photos/travelphoto11.jpg"
-import photo11_480 from "../../../../assets/photos/670/travelphoto/tp11.png"
-import photo11_1030 from "../../../../assets/photos/1140/travelphoto/tp11.png"
+import photo11 from "assets/photos/travelphoto11.jpg"
+import photo11_480 from "assets/photos/670/travelphoto/tp11.png"
+import photo11_1030 from "assets/photos/1140/travelphoto/tp11.png"
 
-import photo12 from "../../../../assets/photos/travelphoto12.jpg"
-import photo12_1030 from "../../../../assets/photos/1140/travelphoto/tp12.png"
+import photo12 from "assets/photos/travelphoto12.jpg"
+import photo12_1030 from "assets/photos/1140/travelphoto/tp12.png"
 
-import photo13 from "../../../../assets/photos/travelphoto13.jpg"
+import photo13 from "assets/photos/travelphoto13.jpg"
 
-import { BlockTitle, BlockSubtitle } from '../../../commons/texts'
-import { PropTypes } from 'prop-types'
+import { BlockTitle, BlockSubtitle } from "components/commons/texts"
+import { PropTypes } from "prop-types"
 
 const PhotoItem = ({id, url, url480, url1030}) => {
   return <picture key={id} className={"photo__item photo" + id}>

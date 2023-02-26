@@ -1,5 +1,5 @@
 import "./welcome.css"
-import { BlockPNormal, BlockH1 } from "../../../commons/texts"
+import { BlockPNormal, BlockH1 } from "components/commons/texts"
 
 export const Welcome = () => {
   return <div className="welcome">

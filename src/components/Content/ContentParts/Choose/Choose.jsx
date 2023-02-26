@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { ChooseStoriesItem, chooseType } from "../../../commons/ChooseStoriesItem"
-import { BlockH2, BlockPBig } from './../../../commons/texts'
+import { ChooseStoriesItem, chooseType } from "components/commons/ChooseStoriesItem"
+import { BlockH2, BlockPBig } from "components/commons/texts"
 
 import "./choose.css"
 
