@@ -1,8 +1,10 @@
 import { PropTypes } from "prop-types"
 import commonS from "components/commons/Texts.module.css"
+import s from "./FormTextarea.module.css"
+import "../formElements.css"
 
 export const FormTextarea = ({ id, name, title }) => {
-  return <div className="form__control comment-block">
+  return <div className={"form__control " + s.commentBlock}>
     <label className={commonS._pNormal} htmlFor={id}> {title} </label>
     <textarea className={commonS._pNormal} name={name} id={id} cols="30" rows="10"></textarea>
   </div>

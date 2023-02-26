@@ -1,11 +1,13 @@
 import { PropTypes } from "prop-types"
 import commonS from "components/commons/Texts.module.css"
+import s from "./FormAddCheckboxToConditions.module.css"
+import "../formElements.css"
 
 export const FormAddCheckboxToConditions = ({ name, isRequired, children }) => {
-  return <div className="form-control checkbox-block">
-    <label> <input type="checkbox" name={name} required={isRequired} /> <span className="fakebox"></span> </label>
+  return <div className={"form-control " + s.checkboxBlock}>
+    <label> <input type="checkbox" name={name} required={isRequired} /> <span className={s.fakebox}></span> </label>
 
-    <p className={"fakebox__text " + commonS._pSmall}>
+    <p className={s.fakebox__text + " " + commonS._pSmall}>
       {children}
     </p>
   </div>

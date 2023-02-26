@@ -1,0 +1,75 @@
+.controlButtons {
+  height: 58px;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.form__button {
+  width: 100%;
+  cursor: pointer;
+  height: 58px;
+  border-radius: 10px;
+  padding: 15px 30px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.form__buttons .subButton {
+  background: #286562;
+  color: #fff;
+}
+
+.subButton:hover {
+  background: #3B7E7B;
+}
+
+.subButton:active {
+  background: #627F7E;
+}
+
+.form__buttons  .resButton {
+  background: #E0F0E5;
+  color: #286562;
+}
+
+.resButton:hover {
+  background: #F1F3F2;
+}
+
+.resButton:active {
+  background: #D9DFDB;
+}
+
+@media screen and (max-width: 1140px ){ 
+  .form__buttons {
+    position: absolute;
+  }
+
+  .form__button {
+    width: 235px;
+  }
+}
+
+
+@media screen and (max-width: 960px ){ 
+  .controlButtons {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .form__buttons {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form__button {
+    height: 47px;
+    padding: 12px 30px;
+  }
+}

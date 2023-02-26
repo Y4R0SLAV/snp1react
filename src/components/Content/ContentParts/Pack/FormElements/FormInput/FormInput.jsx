@@ -1,5 +1,7 @@
 import { PropTypes } from "prop-types"
 import commonS from "components/commons/Texts.module.css"
+import "../formElements.css"
+
 
 export const FormInput = ({ id, title, type, placeholder, isRequired, cn = "", onFocus = null, onBlur = null }) => {
   const plug = (e) => { }

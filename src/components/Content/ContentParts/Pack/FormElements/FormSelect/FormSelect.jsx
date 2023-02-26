@@ -1,8 +1,10 @@
 import { PropTypes } from "prop-types"
 import commonS from "components/commons/Texts.module.css"
+import s from "./FormSelect.module.css"
+import "../formElements.css"
 
 export const FormSelect = ({ id, title, name, isRequired, defaultValue, options }) => {
-  return <div className="form__control direction-form">
+  return <div className={"form__control " + s.directionForm}>
     <label htmlFor={id} className={commonS._pNormal}>{title}</label> 
     <select
       className={commonS._pNormal}

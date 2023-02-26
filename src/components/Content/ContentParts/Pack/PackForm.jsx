@@ -1,9 +1,9 @@
-import { FormInput } from './FormElements/FormInput'
-import { FormSelect } from './FormElements/FormSelect'
-import { FormRadioTwoVariants } from './FormElements/FormRadioTwoVariants'
-import { FormTextarea } from './FormElements/FormTextarea'
-import { FormAddCheckboxToConditions } from './FormElements/FormAddCheckboxToConditions'
-import { FormButtons } from './FormElements/FormButtons'
+import { FormInput } from './FormElements/FormInput/FormInput'
+import { FormSelect } from './FormElements/FormSelect/FormSelect'
+import { FormRadioTwoVariants } from './FormElements/FormRadioTwoVariants/FormRadioTwoVariants'
+import { FormTextarea } from './FormElements/FormTextarea/FormTextarea'
+import { FormAddCheckboxToConditions } from './FormElements/FormAddCheckboxToConditions/FormAddCheckboxToConditions'
+import { FormButtons } from './FormElements/FormButtons/FormButtons'
 
 import "./packForm.css"
 // здесь стили для каждого отдельного элемента формы, т.к. они почти все пересекаются
