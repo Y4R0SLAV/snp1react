@@ -2,7 +2,7 @@
 .control {
   display: flex;
   flex-direction: column;
-  color: #1B1F2B;
+  color: #1b1f2b;
 }
 
 .control label {
@@ -10,22 +10,22 @@
 }
 
 .control input::placeholder {
-  color: #A6A6A6;
+  color: #a6a6a6;
 }
 
 .control input {
   padding: 17px 19.5px 20.5px;
   border-radius: 10px;
-  background: #F9F7F4;
-  border: 1px solid #F4F0E9;
+  background: #f9f7f4;
+  border: 1px solid #f4f0e9;
 }
 
 .control input:focus {
-  border: 1px solid #A6A6A6;
+  border: 1px solid #a6a6a6;
   outline: none;
 }
 
-@media screen and (max-width: 960px ){ 
+@media screen and (max-width: 960px) {
   .control input {
     padding: 10px;
   }

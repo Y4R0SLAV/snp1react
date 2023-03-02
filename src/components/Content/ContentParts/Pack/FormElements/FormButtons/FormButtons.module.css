@@ -24,27 +24,27 @@
 }
 
 .subButton:hover {
-  background: #3B7E7B;
+  background: #3b7e7b;
 }
 
 .subButton:active {
-  background: #627F7E;
+  background: #627f7e;
 }
 
-.form__buttons  .resButton {
-  background: #E0F0E5;
+.form__buttons .resButton {
+  background: #e0f0e5;
   color: #286562;
 }
 
 .resButton:hover {
-  background: #F1F3F2;
+  background: #f1f3f2;
 }
 
 .resButton:active {
-  background: #D9DFDB;
+  background: #d9dfdb;
 }
 
-@media screen and (max-width: 1140px ){ 
+@media screen and (max-width: 1140px) {
   .form__buttons {
     position: absolute;
   }
@@ -54,8 +54,7 @@
   }
 }
 
-
-@media screen and (max-width: 960px ){ 
+@media screen and (max-width: 960px) {
   .controlButtons {
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -67,7 +66,7 @@
     justify-content: space-between;
     gap: 10px;
   }
-  
+
   .form__button {
     height: 47px;
     padding: 12px 30px;

@@ -17,12 +17,12 @@ form {
   cursor: pointer;
   user-select: none;
   transition: all 0.3s ease;
-  border-bottom: 1px rgba(0,0,0,0) solid;
-  color: #1B1F2B;
+  border-bottom: 1px rgba(0, 0, 0, 0) solid;
+  color: #1b1f2b;
 }
 
 .license:hover {
-  border-bottom: 1px #1B1F2B solid;
+  border-bottom: 1px #1b1f2b solid;
 }
 
 .license:active {
@@ -30,8 +30,7 @@ form {
   border-bottom: 1px #286562 solid;
 }
 
-
-@media screen and (max-width: 1140px ){ 
+@media screen and (max-width: 1140px) {
   .form {
     padding: 60px;
   }
@@ -40,29 +39,28 @@ form {
   }
 }
 
-@media screen and (max-width: 960px ){ 
+@media screen and (max-width: 960px) {
   .form {
     padding: 20px;
     border-radius: 30px;
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
     gap: 29px;
     max-height: 100%;
   }
-  
+
   .license {
-    color: #1B1F2B;
+    color: #1b1f2b;
     cursor: pointer;
     user-select: none;
     transition: all 0.3s ease;
   }
-
 }
 
-@media screen and (max-width: 680px ){ 
+@media screen and (max-width: 680px) {
   .form {
     margin: 0 5px;
   }

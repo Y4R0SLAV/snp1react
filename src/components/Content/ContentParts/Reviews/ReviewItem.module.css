@@ -1,7 +1,7 @@
 .item {
   padding: 40px;
   border-radius: 50px;
-  background: #F4F0E9;
+  background: #f4f0e9;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -24,25 +24,24 @@
   justify-content: space-between;
 }
 
-.name {  
+.name {
   position: relative;
   top: -4px;
 }
 
-.to {  
-  color: #A6A6A6;
+.to {
+  color: #a6a6a6;
 
   padding-top: 5px;
 }
 
-.photo img{
+.photo img {
   width: 75px;
   height: 75px;
   border-radius: 100px;
 }
 
-
-@media screen and (max-width: 680px ){ 
+@media screen and (max-width: 680px) {
   .title {
     max-width: 400px;
   }

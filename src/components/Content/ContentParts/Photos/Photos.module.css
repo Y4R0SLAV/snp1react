@@ -28,7 +28,8 @@
   overflow: hidden;
 }
 
-.row1 .item picture, .row3 .item {
+.row1 .item picture,
+.row3 .item {
   width: 442.5px;
 }
 
@@ -47,34 +48,39 @@
   }
 
   .item {
-    position: relative; 
+    position: relative;
     top: -1px;
   }
 
-  .row1 .item, .row3 .item {
-    max-width: 30,76vw;
+  .row1 .item,
+  .row3 .item {
+    max-width: 30, 76vw;
   }
-  
+
   .row2 .item {
     max-width: 22.56vw;
   }
 
-  .photo2, .photo7, .photo13 {
+  .photo2,
+  .photo7,
+  .photo13 {
     display: none;
   }
 }
 
 @media screen and (max-width: 695px) {
-  .photo3, .photo6, .photo12 {
+  .photo3,
+  .photo6,
+  .photo12 {
     display: none;
   }
-  
+
   .row2 .item {
     min-width: 29.7vw;
   }
 }
 
-@media screen and (max-width: 680px ){ 
+@media screen and (max-width: 680px) {
   .photos {
     margin: 13px 0 -10px;
     padding-top: 75px;
@@ -96,14 +102,16 @@
     max-height: 30.5vw;
   }
 
-  .row1, .row2, .row3 {
+  .row1,
+  .row2,
+  .row3 {
     justify-content: space-between;
   }
 
   .row1 .item {
     width: 42.2vw;
   }
-  
+
   .row3 .item {
     width: 43.6vw;
   }
@@ -114,7 +122,7 @@
   }
 
   .item {
-    position: relative; 
+    position: relative;
     top: 0px;
   }
 }

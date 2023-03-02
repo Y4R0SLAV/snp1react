@@ -28,7 +28,8 @@
   margin: 50px 0;
 }
 
-.h, .p {
+.h,
+.p {
   color: white;
 }
 
@@ -46,36 +47,40 @@
 
 .btn:hover {
   color: #fff;
-  background: #EFA501;
+  background: #efa501;
 }
 
 .btn:active {
-  color: #1B1F2B;
-  background: #F8E6BE;
+  color: #1b1f2b;
+  background: #f8e6be;
 }
 
-@media screen and (max-width: 1140px ){ 
+@media screen and (max-width: 1140px) {
   .welcome {
     /* тк фото разные подгоняю под макет градиентом */
-    background:
-    linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%),
-    url(assets/photos/footerphoto.jpg) center no-repeat;
+    background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.06) 48.44%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(assets/photos/footerphoto.jpg) center no-repeat;
     background-size: cover;
     width: 100%;
   }
 
   .p {
-    max-width: 470px; 
+    max-width: 470px;
   }
 }
 
-@media screen and (max-width: 680px ){ 
+@media screen and (max-width: 680px) {
   .welcome {
     padding-top: 88px;
     min-height: 488px;
   }
 
-  .h { 
+  .h {
     max-width: 362px;
     margin-top: 5px;
   }

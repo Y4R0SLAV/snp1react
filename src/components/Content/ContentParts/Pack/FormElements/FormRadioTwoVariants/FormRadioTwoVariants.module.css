@@ -1,11 +1,10 @@
 .radioBlock {
   grid-column-start: 1;
   grid-column-end: 3;
-	grid-row: 5;
+  grid-row: 5;
   margin-top: 2px;
   margin-bottom: -1px;
 }
-
 
 .choices {
   padding: 0;
@@ -14,17 +13,17 @@
   justify-content: left;
 }
 
-.choices label input[type=radio] {
+.choices label input[type='radio'] {
   position: absolute;
   opacity: 0;
-  width: 0; 
+  width: 0;
   height: 0;
 }
 
 .choices label {
   padding-left: 37px;
   width: 94px;
-  display:block;
+  display: block;
   position: relative;
   cursor: pointer;
 }
@@ -33,48 +32,46 @@
   position: absolute;
   top: 1.5px;
   left: 0;
-  
-  width: 26px; 
+
+  width: 26px;
   height: 26px;
   background-color: white;
-  border: 2px solid #1B1F2B;
+  border: 2px solid #1b1f2b;
   border-radius: 50%;
   transition: all 300ms ease;
 }
 
 .fakeradio::after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
   top: 5.65px;
   left: 5.65px;
-  background-color:#1B1F2B;
+  background-color: #1b1f2b;
   width: 12px;
   height: 12px;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 label input:checked ~ .fakeradio:after {
   display: block;
 }
 
-
-@media screen and (max-width: 960px ){ 
+@media screen and (max-width: 960px) {
   .choices label {
     padding-left: 30px;
     width: 81px;
   }
-  
+
   .fakeradio {
-    width: 20px; 
+    width: 20px;
     height: 20px;
   }
-  
+
   .fakeradio:after {
     width: 9.23px;
     height: 9.23px;
     top: 3.95px;
     left: 3.8px;
   }
-
 }

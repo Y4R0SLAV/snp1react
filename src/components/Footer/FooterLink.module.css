@@ -1,4 +1,3 @@
-
 .item {
   display: flex;
   position: relative;
@@ -36,25 +35,24 @@
 .link {
   position: relative;
   text-decoration: none;
-  
+
   cursor: pointer;
   transition: all 0.3s ease;
-  
-  border-bottom: 1px rgba(0,0,0,0) solid;
+
+  border-bottom: 1px rgba(0, 0, 0, 0) solid;
   height: 28px;
 }
 
 .link:hover {
-  border-bottom: 1px #1B1F2B solid;
+  border-bottom: 1px #1b1f2b solid;
 }
 
 .link:active {
-  color: #EFA501;
-  border-bottom: 1px #EFA501 solid;
+  color: #efa501;
+  border-bottom: 1px #efa501 solid;
 }
 
-
-@media screen and (max-width: 960px ){
+@media screen and (max-width: 960px) {
   .iconInst {
     width: 25.25px;
     height: 25.25px;
@@ -69,7 +67,7 @@
     width: 28.46px;
     height: 24px;
   }
-  
+
   .link {
     height: 15px;
   }

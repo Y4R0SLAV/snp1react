@@ -4,7 +4,7 @@
 
 .items {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;
   gap: 52.5px;
 }
@@ -12,7 +12,7 @@
 .ul {
   padding-left: 30px;
   list-style: none;
-  position: relative
+  position: relative;
 }
 
 .span {
@@ -21,38 +21,39 @@
 
 .span::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 4.5px;
   height: 4.5px;
   top: 45%;
   left: -15px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   background: white;
   border-radius: 50%;
 }
 
-@media screen and (max-width: 960px ){
+@media screen and (max-width: 960px) {
   .items {
     gap: 20px;
     padding: 10px 0;
     margin: 0 5px;
   }
-    /* точки возле ула кастомные */
-    .span::before {
-      position: absolute;
-      content: "";
-      width: 5px;
-      height: 5px;
-      top: 50%; left: -20px;
-      transform: translate(-50%,-50%);
-        
-      background: white;
-      border-radius: 50%;
-    }
+  /* точки возле ула кастомные */
+  .span::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+
+    background: white;
+    border-radius: 50%;
+  }
 }
 
-@media screen and (max-width: 680px ){ 
+@media screen and (max-width: 680px) {
   .stories {
     padding-top: 75px;
   }
@@ -62,16 +63,16 @@
     top: 3px;
     left: -6px;
   }
-  
+
   .span::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 3px;
     height: 3px;
     top: 45%;
     left: -12px;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
+
     background: white;
     border-radius: 50%;
   }
@@ -79,6 +80,6 @@
   .ul {
     padding-left: 30px;
     list-style: none;
-    position: relative
+    position: relative;
   }
 }
