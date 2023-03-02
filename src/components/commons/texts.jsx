@@ -1,50 +1,53 @@
 import PropTypes from 'prop-types'
 import s from "./Texts.module.css"
+import classNames from 'classnames/bind'
+
+let cx = classNames.bind(s)
 
 export const BlockTitle = ({ title = "", cn = "", children }) => {
-  return <h2 className={s._title + " " + s._h2 + " " + cn}>
+  return <h2 className={cx({_title: true, _h2: true, [cn]: true})}>
     {title || children}
   </h2>
 }
 
 export const BlockSubtitle = ({ title = "", cn = "", children }) => {
-  return <div className={s._pNormal + " " + s._subtitle + " " + cn}>
+  return <div className={cx({_pNormal: true, _subtitle: true, [cn]: true})}>
     {title || children}
   </div>
 }
 
 export const BlockH1 = ({ title = "", cn = "", children }) => {
-  return <h1 className={s._h1 + " " + cn}>
+  return <h1 className={cx({_h1: true, [cn]: true})}>
     {title || children}
   </h1>
 }
 
 export const BlockH2 = ({ title = "", cn = "", children }) => {
-  return <h2 className={s._h2 + " " + cn}>
+  return <h2 className={cx({_h2: true, [cn]: true})}>
     {title || children}
   </h2>
 }
 
 export const BlockH3 = ({ title = "", cn = "", children }) => {
-  return <h3 className={s._h3 + " " + cn}>
+  return <h3 className={cx({_h3: true, [cn]: true})}>
     {title || children}
   </h3>
 }
 
 export const BlockPSmall = ({ title = "", cn = "", children }) => {
-  return <h3 className={s._pSmall + " " + cn}>
+  return <h3 className={cx({_pSmall: true, [cn]: true})}>
     {title || children}
   </h3>
 }
 
 export const BlockPNormal = ({ title = "", cn = "", children }) => {
-  return <div className={s._pNormal + " " + cn}>
+  return <div className={cx({_pNormal: true, [cn]: true})}>
     {title || children}
   </div>
 }
 
 export const BlockPBig = ({ title = "", cn = "", children }) => {
-  return <div className={s._pBig + " " + cn}>
+  return <div className={cx({_pBig: true, [cn]: true})}>
     {title || children}
   </div>
 }

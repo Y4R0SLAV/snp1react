@@ -1,13 +1,19 @@
 import PropTypes from 'prop-types'
 import s from './FooterLink.module.css'
+import classNames from 'classnames/bind'
+  
 
 export const FooterLink = ({id, cn, imgSrc, url, title}) => {
-  return <div key={id} className={s.footer__item + " " + s["item-" + cn]}>
-  <div className={s.footer__icon + " " + s["icon-" + cn]}>
-    <img src={imgSrc} alt="" />
+  let cx = classNames.bind(s)
+  let itemClass = "item" + cn
+  let iconClass = "icon" + cn
+
+  return <div key={id} className={cx({item: true, [itemClass]: true})}>
+    <div className={cx({icon: true, [iconClass]: true})}>
+      <img src={imgSrc} alt="" />
+    </div>
+    <a className={s.link} href={url}>{title}</a>
   </div>
-  <a className={s.footer__link + " " + s["link" + id]} href={url}>{title}</a>
-</div>
 }
 
 FooterLink.propTypes = {

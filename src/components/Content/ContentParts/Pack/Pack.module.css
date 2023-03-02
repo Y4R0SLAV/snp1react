@@ -1,0 +1,13 @@
+.pack {
+  padding-top: 135px;
+}
+
+.subtitleFool {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 680px ){ 
+  .pack {
+    padding-top: 75px;
+  }
+}

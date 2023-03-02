@@ -1,13 +1,14 @@
 import { PropTypes } from "prop-types"
 import commonS from "components/commons/Texts.module.css"
 import s from "./FormRadioTwoVariants.module.css"
-import "../formElements.css"
+import formStyles from "../FormElements.module.css"
+import classNames from "classnames"
 
 export const FormRadioTwoVariants = ({ name, title, first, second, isRequired }) => {
-  return <div className={"form__control " + s.radioBlock}>
+  return <div className={classNames(formStyles.control, s.radioBlock)}>
     <label className={commonS._pNormal}> {title} </label>
 
-    <div className={s.form__choices}>
+    <div className={s.choices}>
       <label className={commonS._pNormal}> {first} <input type="radio"
         name={name} required={isRequired} />
         <span className={s.fakeradio}></span>

@@ -1,12 +1,12 @@
 import { PropTypes } from "prop-types"
 import commonS from "components/commons/Texts.module.css"
-import "../formElements.css"
+import formStyle from "../FormElements.module.css"
 
 
 export const FormInput = ({ id, title, type, placeholder, isRequired, cn = "", onFocus = null, onBlur = null }) => {
   const plug = (e) => { }
 
-  return <div className="form__control">
+  return <div className={formStyle.control}>
     <label className={commonS._pNormal} htmlFor={id}>{title}</label>
     
     <input className={commonS._pNormal + " " + cn}

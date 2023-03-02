@@ -3,15 +3,15 @@ import { BlockPBig, BlockH3, BlockPSmall } from "components/commons/texts"
 import s from "./ReviewItem.module.css"
 
 export const ReviewItem = ({ children, name, tourName, imgSrc }) => {
-  return <div className={s.reviews__item }>
-    <BlockPBig cn={s.review__text}> {children} </BlockPBig>
+  return <div className={s.item }>
+    <BlockPBig cn={s.text}> {children} </BlockPBig>
 
-    <div className={s.review__person}>
-      <div className={s.review__info}>
-        <BlockH3 cn={s.review__name} title={name} />
-        <BlockPSmall cn={s.review__to}>Тур: {tourName}</BlockPSmall>
+    <div className={s.person}>
+      <div className={s.info}>
+        <BlockH3 cn={s.name} title={name} />
+        <BlockPSmall cn={s.to}>Тур: {tourName}</BlockPSmall>
       </div>
-      <div className={s.review__photo}>
+      <div className={s.photo}>
         <img src={imgSrc} alt="" />
       </div>
     </div>

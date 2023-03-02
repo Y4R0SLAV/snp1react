@@ -5,19 +5,18 @@ import { FormTextarea } from './FormElements/FormTextarea/FormTextarea'
 import { FormAddCheckboxToConditions } from './FormElements/FormAddCheckboxToConditions/FormAddCheckboxToConditions'
 import { FormButtons } from './FormElements/FormButtons/FormButtons'
 
-import "./packForm.css"
-// здесь стили для каждого отдельного элемента формы, т.к. они почти все пересекаются
+import s from "./PackForm.module.css"
 
 export const PackForm = () => {
-  return <div className="form">
+  return <div className={s.form}>
     <form action="">
-      <FormInput id="username" title="Имя" type="text" placeholder="Введите Ваше имя" isRequired={true} cn="" />
+      <FormInput id="username" title="Имя" type="text" placeholder="Введите Ваше имя" isRequired={true}/>
       <FormSelect id="direction" title="Направление"
         name="role" isRequired={true} defaultValue="Куда хотите ехать?"
         options={[{ value: "Kazakhstan", title: "Казахстан" }, { value: "Costa-Rica", title: "Коста-Рика" }]} />
 
-      <FormInput id="email" title="Email" type="email" placeholder="example@mail.com" isRequired={true} cn="" />
-      <FormInput id="number" title="Телефон" type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" isRequired={true} cn="form__number" />
+      <FormInput id="email" title="Email" type="email" placeholder="example@mail.com" isRequired={true} />
+      <FormInput id="number" title="Телефон" type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" isRequired={true} />
 
       <FormInput id="date-from" title="Дата от" type="text"
         placeholder="ДД.ММ.ГГГГ" isRequired={true}
@@ -34,7 +33,7 @@ export const PackForm = () => {
       <FormRadioTwoVariants first="Да" second="Нет" name="eighteen" isRequired={true} title="Вам есть 18 лет?" />
 
       <FormAddCheckboxToConditions name="inp" isRequired={true}>
-        Нажимая кнопку, я принимаю условия <span className="form__license" >Лицензионного договора</span>
+        Нажимая кнопку, я принимаю условия <span className={s.license} >Лицензионного договора</span>
       </FormAddCheckboxToConditions>
 
       <FormButtons submitText="Найти тур" resetText="Сбросить"/>

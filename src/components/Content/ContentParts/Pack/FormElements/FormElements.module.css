@@ -1,0 +1,32 @@
+/* общие свойства у всех элементов формы */
+.control {
+  display: flex;
+  flex-direction: column;
+  color: #1B1F2B;
+}
+
+.control label {
+  margin-bottom: 8px;
+}
+
+.control input::placeholder {
+  color: #A6A6A6;
+}
+
+.control input {
+  padding: 17px 19.5px 20.5px;
+  border-radius: 10px;
+  background: #F9F7F4;
+  border: 1px solid #F4F0E9;
+}
+
+.control input:focus {
+  border: 1px solid #A6A6A6;
+  outline: none;
+}
+
+@media screen and (max-width: 960px ){ 
+  .control input {
+    padding: 10px;
+  }
+}

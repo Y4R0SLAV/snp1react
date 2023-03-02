@@ -1,6 +1,7 @@
-import "./stories.css"
+import s from "./Stories.module.css"
 import { BlockTitle, BlockSubtitle } from "components/commons/texts"
 import { ChooseStoriesItem, storiesType } from "components/commons/ChooseStoriesItem"
+import globalStyles from "GlobalStyles.module.css"
 
 
 export const Stories = () => {
@@ -15,19 +16,21 @@ export const Stories = () => {
                   { title: "facebook", url: "https://yandex.ru", id: 7 }, 
                   { title: "ВКонтакте", url: "https://youtube.com", id: 8 }]
 
-  return <div className="stories">
-    <div className="_container">
+  const ulItems = ["вкусная еда", "дешевый транспорт", "красивый город."] 
+
+  return <div className={s.stories}>
+    <div className={globalStyles._container}>
         <BlockTitle title="Истории путешествий" />
         <BlockSubtitle title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
 
-        <div className="stories__items">
+        <div className={s.items}>
           <ChooseStoriesItem id={1} title="Автостопом в Стамбул" links={links1} type={storiesType}>
             Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
             <br /> <br />
-            <ul className="item__ul">
-              <li><span className="item__span">вкусная еда</span> </li>
-              <li><span className="item__span">дешевый транспорт</span> </li>
-              <li><span className="item__span">красивый город.</span></li>
+            <ul className={s.ul}>
+              {ulItems.map(item => {
+                return <li key={item}><span className={s.span}> {item }</span> </li>
+              })}
             </ul>
           </ChooseStoriesItem>
 

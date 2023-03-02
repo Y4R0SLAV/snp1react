@@ -7,21 +7,21 @@
 }
 
 
-.form__choices {
+.choices {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: left;
 }
 
-.form__choices label input[type=radio] {
+.choices label input[type=radio] {
   position: absolute;
   opacity: 0;
   width: 0; 
   height: 0;
 }
 
-.form__choices label {
+.choices label {
   padding-left: 37px;
   width: 94px;
   display:block;
@@ -60,7 +60,7 @@ label input:checked ~ .fakeradio:after {
 
 
 @media screen and (max-width: 960px ){ 
-  .form__choices label {
+  .choices label {
     padding-left: 30px;
     width: 81px;
   }

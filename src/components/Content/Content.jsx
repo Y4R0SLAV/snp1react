@@ -6,8 +6,10 @@ import { Photos } from './ContentParts/Photos/Photos'
 import { Join } from './ContentParts/Join/Join'
 import { Stories } from './ContentParts/Stories/Stories'
 
+import s from "./Content.module.css"
+
 export const Content = () => {
-  return <div className="wrapper">
+  return <div className={s.wrapper}>
     <Welcome />
     <Choose />
     <Pack />

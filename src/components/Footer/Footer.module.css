@@ -2,24 +2,24 @@ footer {
   background: #F4F0E9;
 }
 
-.footer__content {
+.content {
   height: 88px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer__text {
+.text {
   color: #A6A6A6;
 }
 
-.footer__links {
+.links {
   display: flex;
   gap: 21px;
 }
 
 @media screen and (max-width: 960px ){
-  .footer__content {
+  .content {
     height: 95px;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@ footer {
     gap: 7px;
   }
   
-  .footer__links {
+  .links {
     gap: 14px;
     position: relative;
     top: -4px;

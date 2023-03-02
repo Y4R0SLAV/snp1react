@@ -1,21 +1,25 @@
-.stories__items {
+.stories {
+  padding-top: 135px;
+}
+
+.items {
   display: flex;
   flex-direction: column;  
   align-items: center;
   gap: 52.5px;
 }
 
-.item__ul {
+.ul {
   padding-left: 30px;
   list-style: none;
   position: relative
 }
 
-.item__span {
+.span {
   position: relative;
 }
 
-.item__span::before {
+.span::before {
   position: absolute;
   content: "";
   width: 4.5px;
@@ -29,13 +33,13 @@
 }
 
 @media screen and (max-width: 960px ){
-  .stories__items {
+  .items {
     gap: 20px;
     padding: 10px 0;
     margin: 0 5px;
   }
     /* точки возле ула кастомные */
-    .item__span::before {
+    .span::before {
       position: absolute;
       content: "";
       width: 5px;
@@ -49,13 +53,17 @@
 }
 
 @media screen and (max-width: 680px ){ 
-  .item__span {
+  .stories {
+    padding-top: 75px;
+  }
+
+  .span {
     position: relative;
     top: 3px;
     left: -6px;
   }
   
-  .item__span::before {
+  .span::before {
     position: absolute;
     content: "";
     width: 3px;
@@ -68,7 +76,7 @@
     border-radius: 50%;
   }
 
-  .item__ul {
+  .ul {
     padding-left: 30px;
     list-style: none;
     position: relative

@@ -1,4 +1,5 @@
-import "./photos.css"
+import s from "./Photos.module.css"
+import classNames from 'classnames/bind'
 
 import photo1 from "assets/photos/travelphoto1.jpg"
 import photo1_480 from "assets/photos/670/travelphoto/tp1.png"
@@ -44,8 +45,16 @@ import photo13 from "assets/photos/travelphoto13.jpg"
 import { BlockTitle, BlockSubtitle } from "components/commons/texts"
 import { PropTypes } from "prop-types"
 
+
+let cx = classNames.bind(s)
+
 const PhotoItem = ({id, url, url480, url1030}) => {
-  return <picture key={id} className={"photo__item photo" + id}>
+  let className = cx({
+    item: true, 
+    ["photo" + id]: true
+  })
+
+  return <picture key={id} className={className}>
     {url480 && <source media="(max-width: 480px)" srcSet={url480} />}
     {url1030 && <source media="(max-width: 1030px)" srcSet={url1030} />}
     <img src={url} alt="" />
@@ -60,8 +69,13 @@ PhotoItem.propsType = {
 }
 
 const PhotoRow = ({ rowId, photos }) => {
-  return <div className={"photos__row row" + rowId}>
-    {photos.map(photo => <PhotoItem key={photo.id} id={photo.id} url={photo.url} url480={photo.url480 || null } url480={photo.url1330 || null }/>)}
+  let className = cx({
+    row: true, 
+    ["row" + rowId]: true
+  })
+
+  return <div className={className}>
+    {photos.map(photo => <PhotoItem key={photo.id} id={photo.id} url={photo.url} url480={photo.url480 || null } url1330={photo.url1330 || null }/>)}
   </div>
 }
 
@@ -90,12 +104,12 @@ export const Photos = () => {
     { id: 11, url: photo11, url480: photo11_480, url1030: photo11_1030 },
     { id: 12, url: photo12, url1030: photo12_1030 },
     { id: 13, url: photo13 },]
+    
+  return <div className={s.photos}>
+      <BlockTitle title="Фотографии путешествий" />
+      <BlockSubtitle title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
 
-  return <div className="photos">
-      <BlockTitle cn="photos__title" title="Фотографии путешествий" />
-      <BlockSubtitle cn="photos__subtitle" title="Идейные соображения высшего порядка, а также рамки и место обучения кадров" />
-
-      <div className="photos__items">
+      <div className={s.items}>
         <PhotoRow rowId={1} photos={photos.slice(0, 4)} />
         <PhotoRow rowId={2} photos={photos.slice(4, 9)} />
         <PhotoRow rowId={3} photos={photos.slice(9, 13)} />

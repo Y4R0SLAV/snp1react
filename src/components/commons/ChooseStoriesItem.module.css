@@ -33,7 +33,7 @@
 .chooseItem h3,
 .chooseItem p,
 .chooseItem p,
-.itemPrice {
+.price {
   color: white;
 }
 
@@ -50,18 +50,18 @@
   left: 0;
 }
 
-.itemInfo {
+.info {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.itemTitle {
+.title {
   padding-bottom: 16px;
   max-width: 244px;
 }
 
-.itemDetails {
+.details {
   display: flex;
   position: relative;
   z-index: 10;
@@ -69,7 +69,7 @@
 }
 
 /* зелный фон сзади */
-.itemDetails::before {
+.details::before {
   transition: all 3s ease;
   content: "";
   position: absolute;
@@ -84,37 +84,37 @@
   transition: opacity 300ms ease;
 }
 
-.chooseItem:hover .itemDetails::before {
+.chooseItem:hover .details::before {
   opacity: 1;
 }
 
-.storiesItem:hover .itemDetails::before {
+.storiesItem:hover .details::before {
   opacity: 1;
 }
 
-.storiesItem .itemPrice {
+.storiesItem .price {
   max-width: 554px;
 }
 
-.storiesItem .itemTitle {
+.storiesItem .title {
   padding-bottom: 37px;
   max-width: none;
 }
 
-.itemDetNlinks {
+.detNlinks {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.itemLinks {
+.links {
   display: flex;
   position: relative;
   z-index: 10;
   gap: 35px;
 }
 
-.itemLink {
+.link {
   cursor: pointer;
   transition: all 0.3s ease;
   
@@ -123,17 +123,17 @@
   color: white;
 }
 
-.itemLink:hover {
+.link:hover {
   border-bottom: 1px white solid;
 }
 
-.itemLink:active {
+.link:active {
   color: #EFA501;
   border-bottom: 1px #EFA501 solid;
 }
 
 /* белая стрелочка справа */
-.itemDetails::after {
+.details::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -236,7 +236,7 @@
 }
 
 @media screen and (max-width: 1140px ){
-  .itemTitle {
+  .title {
     max-width: 348px;
   }
 
@@ -260,20 +260,20 @@
 }
 
 @media screen and (max-width: 960px ){
-  .itemTitle {
+  .title {
     padding-bottom: 13px;
   }
 
-  .itemDetails {
+  .details {
     position: relative;
     top: -2px;
   }
 
-  .chooseItem:hover .itemDetails::before {
+  .chooseItem:hover .details::before {
     opacity: 0;
   } 
 
-  .itemDetails::after {
+  .details::after {
     top: 4px;
     left: 100px;
   }
@@ -298,7 +298,7 @@
     padding: 30px 25px 30px 30px;
   }
   
-  .itemDetails::before {
+  .details::before {
     width: 150px;
     top: -9px;
     left: -15px;
@@ -342,20 +342,20 @@
     url(assets/photos/670/cardtour/ct6.png) center no-repeat;
   }
 
-  .itemLinks {
+  .links {
     display: none;
   }
   
-  .storiesItem .itemPrice {
+  .storiesItem .price {
     max-width: 500px;
   }
   
-  .storiesItem .itemTitle {
+  .storiesItem .title {
     padding-bottom: 20px;
     max-width: 140px;
   }
   
-  .itemDetNlinks {
+  .detNlinks {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

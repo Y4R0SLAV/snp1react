@@ -2,9 +2,12 @@ import { useState } from "react"
 import { ChooseStoriesItem, chooseType } from "components/commons/ChooseStoriesItem"
 import { BlockH2, BlockPBig } from "components/commons/texts"
 
-import "./choose.css"
+import classNames from 'classnames/bind'
+import s from "./Choose.module.css"
+import globalStyles from "GlobalStyles.module.css"
 
 export const Choose = () => {
+  let cx = classNames.bind(s)
   const [currentButtonId, setCurrentButtonId] = useState(1)
 
   const chooseButtonHandler = (id) => {
@@ -24,21 +27,20 @@ export const Choose = () => {
   { title: "Путешествие в горы", price: "от 80 000 руб", id: 5 },
   { title: "Путешествие в горы", price: "от 80 000 руб", id: 6 },]
 
-  return <div className="choose">
-    <div className="_container">
-      <div className="choose_content">
+  return <div className={s.choose}>
+    <div className={globalStyles._container}>
+      <div className={s.content}>
 
-        <BlockH2 cn="choose__title" title="Выбери свой тур" />
+        <BlockH2 title="Выбери свой тур" />
 
-        <BlockPBig cn="choose__list list-choose"> 
+        <BlockPBig cn={s.list}> 
           {buttons.map(item => {
-            let cn = "list__item"
-            if (item.id === currentButtonId) { cn += " active" }
-            return <div onClick={e => chooseButtonHandler(item.id)} key={item.id} className={cn}> {item.title} </div>
+            let className = cx({item: true, active: item.id === currentButtonId})
+            return <div onClick={e => chooseButtonHandler(item.id)} key={item.id} className={className}> {item.title} </div>
           })}
-          </BlockPBig>
+        </BlockPBig>
 
-        <div className="choose__items">
+        <div className={s.items}>
           {chooseItems.map(item => <ChooseStoriesItem key={item.id} type={chooseType}  id={item.id} title={item.title}> {item.price} </ChooseStoriesItem>)}
         </div>
       </div>

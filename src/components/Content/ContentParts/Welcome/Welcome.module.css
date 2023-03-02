@@ -11,29 +11,28 @@
   background-size: cover;
 }
 
-.welcome__item {
+.item {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.welcome__h {
+.h {
   max-width: 768px;
   pointer-events: none;
 }
 
-.welcome__p {
+.p {
   max-width: 600px;
   margin: 50px 0;
 }
 
-.welcome .welcome__h,
-.welcome .welcome__p {
+.h, .p {
   color: white;
 }
 
-.welcome__btn {
+.btn {
   width: 118px;
   height: 34px;
   color: black;
@@ -45,12 +44,12 @@
   transition: all 300ms ease;
 }
 
-.welcome__btn:hover {
+.btn:hover {
   color: #fff;
   background: #EFA501;
 }
 
-.welcome__btn:active {
+.btn:active {
   color: #1B1F2B;
   background: #F8E6BE;
 }
@@ -65,7 +64,7 @@
     width: 100%;
   }
 
-  .welcome__p {
+  .p {
     max-width: 470px; 
   }
 }
@@ -76,17 +75,17 @@
     min-height: 488px;
   }
 
-  .welcome__h { 
+  .h { 
     max-width: 362px;
     margin-top: 5px;
   }
 
-  .welcome__p {
+  .p {
     margin: 40px 0 45px;
     max-width: 300px;
   }
 
-  .welcome__btn {
+  .btn {
     width: 113px;
     height: 33px;
     font-size: 16px;

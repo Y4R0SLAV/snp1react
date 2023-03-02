@@ -1,17 +1,21 @@
-.reviews__items {
+.reviews {
+  padding-top: 135px;
+}
+
+.items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
 }
 
 @media screen and (max-width: 1140px ){ 
-  .reviews__items {
+  .items {
     grid-column-gap: 18px;
   }
 }
 
 @media screen and (max-width: 960px ){
-  .reviews__items {
+  .items {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,11 +25,14 @@
 }
 
 @media screen and (max-width: 680px ){ 
-  .reviews__items {
+  .items {
     display: grid;
     grid-template-columns: 318px;
     grid-row-gap: 22px;
     position: relative;
     top: 10px;      
+  }
+  .reviews {
+    padding-top: 75px;
   }
 }
