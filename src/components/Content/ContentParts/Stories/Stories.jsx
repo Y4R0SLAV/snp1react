@@ -43,7 +43,7 @@ export const Stories = () => {
               {ulItems.map((item) => {
                 return (
                   <li key={item}>
-                    <span className={s.span}> {item}</span>{' '}
+                    <span className={s.span}> {item}</span>
                   </li>
                 )
               })}

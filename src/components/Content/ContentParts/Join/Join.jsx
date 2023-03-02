@@ -1,5 +1,5 @@
 import footerPhoto from 'assets/photos/footerphoto.jpg'
-import { BlockH3, BlockSubtitle } from 'components/commons/texts'
+import {BlockH3, BlockSubtitle} from 'components/commons/texts'
 import s from './Join.module.css'
 
 export const Join = () => {
@@ -24,7 +24,7 @@ export const Join = () => {
               className={s.email}
               href='mailto:yourtour@gmail.com'
             >
-              yourtour@gmail.com{' '}
+              yourtour@gmail.com
             </a>
           </BlockSubtitle>
         </div>

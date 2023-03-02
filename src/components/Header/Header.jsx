@@ -46,29 +46,25 @@ export const Header = () => {
           <div className={s.btns}>
             {buttons.map((item) => (
               <BlockPNormal key={item.id}>
-                {' '}
                 <a
                   href={item.href}
                   rel='noreferrer'
                   className={s.btn}
                   target='_blank'
                 >
-                  {' '}
-                  {item.title}{' '}
-                </a>{' '}
+                  {item.title}
+                </a>
               </BlockPNormal>
             ))}
           </div>
 
           <BlockPNormal>
-            {' '}
             <a
               className={s.number}
               href='tel:+79999999999'
             >
-              {' '}
               +7 999 999 99 99
-            </a>{' '}
+            </a>
           </BlockPNormal>
         </nav>
       </div>

@@ -1,10 +1,10 @@
-import { PropTypes } from 'prop-types'
+import {PropTypes} from 'prop-types'
 import commonS from 'components/commons/Texts.module.css'
 import s from './FormSelect.module.css'
 import formStyles from '../FormElements.module.css'
 import classNames from 'classnames'
 
-export const FormSelect = ({ id, title, name, isRequired, defaultValue, options }) => {
+export const FormSelect = ({id, title, name, isRequired, defaultValue, options}) => {
   return (
     <div className={classNames(formStyles.control, s.directionForm)}>
       <label
@@ -25,8 +25,7 @@ export const FormSelect = ({ id, title, name, isRequired, defaultValue, options 
           defaultValue
           hidden
         >
-          {' '}
-          {defaultValue}{' '}
+          {defaultValue}
         </option>
         {options.map((option) => (
           <option
@@ -52,6 +51,6 @@ FormSelect.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       value: PropTypes.string.isRequired,
-    }).isRequired
+    }).isRequired,
   ).isRequired,
 }

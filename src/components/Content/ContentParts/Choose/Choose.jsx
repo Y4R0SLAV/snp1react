@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import { ChooseStoriesItem, chooseType } from 'components/commons/ChooseStoriesItem'
-import { BlockH2, BlockPBig } from 'components/commons/texts'
+import {useState} from 'react'
+import {ChooseStoriesItem, chooseType} from 'components/commons/ChooseStoriesItem'
+import {BlockH2, BlockPBig} from 'components/commons/texts'
 
 import classNames from 'classnames/bind'
 import s from './Choose.module.css'
@@ -15,20 +15,20 @@ export const Choose = () => {
   }
 
   const buttons = [
-    { title: 'Популярные', id: 1 },
-    { title: 'Авторские', id: 2 },
-    { title: 'Походы', id: 3 },
-    { title: 'Сплавы', id: 4 },
-    { title: 'Велопрогулки', id: 5 },
+    {title: 'Популярные', id: 1},
+    {title: 'Авторские', id: 2},
+    {title: 'Походы', id: 3},
+    {title: 'Сплавы', id: 4},
+    {title: 'Велопрогулки', id: 5},
   ]
 
   const chooseItems = [
-    { title: 'Путешествие в горы', price: 'от 80 000 руб', id: 1 },
-    { title: 'Путешествие в горы', price: 'от 80 000 руб', id: 2 },
-    { title: 'Путешествие в горы', price: 'от 80 000 руб', id: 3 },
-    { title: 'Путешествие в горы', price: 'от 80 000 руб', id: 4 },
-    { title: 'Путешествие в горы', price: 'от 80 000 руб', id: 5 },
-    { title: 'Путешествие в горы', price: 'от 80 000 руб', id: 6 },
+    {title: 'Путешествие в горы', price: 'от 80 000 руб', id: 1},
+    {title: 'Путешествие в горы', price: 'от 80 000 руб', id: 2},
+    {title: 'Путешествие в горы', price: 'от 80 000 руб', id: 3},
+    {title: 'Путешествие в горы', price: 'от 80 000 руб', id: 4},
+    {title: 'Путешествие в горы', price: 'от 80 000 руб', id: 5},
+    {title: 'Путешествие в горы', price: 'от 80 000 руб', id: 6},
   ]
 
   return (
@@ -39,15 +39,14 @@ export const Choose = () => {
 
           <BlockPBig cn={s.list}>
             {buttons.map((item) => {
-              let className = cx({ item: true, active: item.id === currentButtonId })
+              let className = cx({item: true, active: item.id === currentButtonId})
               return (
                 <div
                   onClick={(e) => chooseButtonHandler(item.id)}
                   key={item.id}
                   className={className}
                 >
-                  {' '}
-                  {item.title}{' '}
+                  {item.title}
                 </div>
               )
             })}
@@ -61,8 +60,7 @@ export const Choose = () => {
                 id={item.id}
                 title={item.title}
               >
-                {' '}
-                {item.price}{' '}
+                {item.price}
               </ChooseStoriesItem>
             ))}
           </div>

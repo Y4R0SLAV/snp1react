@@ -1,9 +1,9 @@
-import { FormInput } from './FormElements/FormInput/FormInput'
-import { FormSelect } from './FormElements/FormSelect/FormSelect'
-import { FormRadioTwoVariants } from './FormElements/FormRadioTwoVariants/FormRadioTwoVariants'
-import { FormTextarea } from './FormElements/FormTextarea/FormTextarea'
-import { FormAddCheckboxToConditions } from './FormElements/FormAddCheckboxToConditions/FormAddCheckboxToConditions'
-import { FormButtons } from './FormElements/FormButtons/FormButtons'
+import {FormInput} from './FormElements/FormInput/FormInput'
+import {FormSelect} from './FormElements/FormSelect/FormSelect'
+import {FormRadioTwoVariants} from './FormElements/FormRadioTwoVariants/FormRadioTwoVariants'
+import {FormTextarea} from './FormElements/FormTextarea/FormTextarea'
+import {FormAddCheckboxToConditions} from './FormElements/FormAddCheckboxToConditions/FormAddCheckboxToConditions'
+import {FormButtons} from './FormElements/FormButtons/FormButtons'
 
 import s from './PackForm.module.css'
 
@@ -25,8 +25,8 @@ export const PackForm = () => {
           isRequired={true}
           defaultValue='Куда хотите ехать?'
           options={[
-            { value: 'Kazakhstan', title: 'Казахстан' },
-            { value: 'Costa-Rica', title: 'Коста-Рика' },
+            {value: 'Kazakhstan', title: 'Казахстан'},
+            {value: 'Costa-Rica', title: 'Коста-Рика'},
           ]}
         />
 
@@ -83,8 +83,8 @@ export const PackForm = () => {
           name='inp'
           isRequired={true}
         >
-          Нажимая кнопку, я принимаю условия{' '}
-          <span className={s.license}>Лицензионного договора</span>
+          Нажимая кнопку, я принимаю условия
+          <span className={s.license}> Лицензионного договора</span>
         </FormAddCheckboxToConditions>
 
         <FormButtons
